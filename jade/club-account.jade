@@ -1,0 +1,645 @@
+doctype html
+html(lang='zh-TW')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 映捌玖駁二電影院
+    link(rel='shortcut icon', type='image/x-icon', href='../assets/images/favicon.ico')
+    // google-font
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans|Black+Ops+One')
+    // font-awesome
+    link(rel='stylesheet', href='../assets/css/font-awesome.min.css')
+    // fancy-box
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox.css', media='screen')
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox-buttons.css')
+    link(rel='stylesheet', href='../assets/css/tab.css')
+    link(rel='stylesheet', href='../assets/css/pages/club-account.css')
+    link(rel='stylesheet', href='../assets/css/responsive-table.css')
+    script(src='../assets/js/jquery-1.11.0.min.js')
+    script(src='../assets/js/jquery-migrate-1.2.1.min.js')
+    // fancy-box
+    script(src='../assets/js/fancybox/jquery.fancybox.js')
+    script(src='../assets/js/lightbox.js')
+    script(src='../assets/js/all.js')
+    // tab's
+    script(src='../assets/js/prefixfree.min.js')
+    script(src='../assets/js/tab.js')
+    script(src='../assets/js/account-list.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-63285262-1', 'auto');
+      ga('send', 'pageview');
+  body
+    #root
+      include ./particle/_header
+      .full-width.is-center
+        article.inside-pages
+          // inside-pages-main
+          section.inside-pages-tab.club-form
+            .tabs
+              nav.transformer-tabs.clearfix(role='navigation')
+                ul 
+                  li
+                    a.active(href='#tab-1')
+                      i.fa.fa-pencil
+                      | 編輯個人檔案
+                  li
+                    a(href='#tab-2')
+                      i.fa.fa-minus
+                      | 購票記錄查詢
+                  li
+                    a(href='#tab-3')
+                      i.fa.fa-plus
+                      | 儲值記錄查詢
+                  li
+                    a(href='#tab-4')
+                      i.fa.fa-gift
+                      | 兌換記錄查詢
+              #tab-1.active.clearfix
+                h2.is-yellow
+                  | 親愛的＿＿＿會員您好，歡迎登入！
+                  br 
+                  | 提醒您，你的會員卡期限至：2016-12-02日止。
+                form.application-group(method='post', action='')
+                  .form-item
+                    label(for='phone')
+                      span.is-yellow ＊
+                      | 電話
+                    input#phone(type='tel', name='phone', value='02-23315077', required='required')
+                  .form-item
+                    label(for='mobile-phone')
+                      span.is-yellow ＊
+                      | 手機
+                    input#mobile-phone(type='tel', name='mobile-phone', value='0912-345678', required='required')
+                  .form-item
+                    label(for='usermail')
+                      span.is-yellow ＊
+                      | 電子郵件
+                    input#usermail(type='email', name='usermail', value='test@gmail.com', required='required')
+                  .form-item.clearfix
+                    label 居住地址
+                    .select-style.address-select 
+                      select.is-white(name='')
+                        option(value='') 台北市 
+                        option(value='') 新北市 
+                        option(value='') 桃源市
+                    .select-style.address-select 
+                      select.is-white(name='')
+                        option(value='') 中正區 
+                        option(value='') 中山區 
+                        option(value='') 松山區
+                    input#address(type='text', name='address', value='') 
+                  .form-checkbox.clearfix
+                    p 電影偏好
+                    .film-type-group
+                      input#film-type-a.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-a') 喜劇片
+                    .film-type-group
+                      input#film-type-b.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-b') 科幻片
+                    .film-type-group
+                      input#film-type-c.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-c') 文藝片
+                    .film-type-group
+                      input#film-type-d.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-d') 戰爭片
+                    .film-type-group
+                      input#film-type-e.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-e') 劇情片
+                    .film-type-group
+                      input#film-type-f.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-f') 情慾片
+                    .film-type-group
+                      input#film-type-g.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-g') 藝術片
+                    .film-type-group
+                      input#film-type-h.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-h') 驚悚片
+                    .film-type-group
+                      input#film-type-i.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-i') 歌舞片
+                    .film-type-group
+                      input#film-type-j.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-j') 記錄片
+                    .film-type-group
+                      input#film-type-k.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-k') 動畫片
+                    .film-type-group
+                      input#film-type-l.checkbox(type='checkbox', name='', value='')
+                      label(for='film-type-l') 恐怖片
+                  input.round-corner-button(type='submit', value='確認送出')
+              // tab-1 
+              #tab-2.tab-table.clearfix
+                .tab-top.clearfix
+                  .user-info
+                    p
+                      | 儲值金額：1590元
+                      span ｜
+                      | 目前累計紅利：1110點
+                    p 紅利失效年度：2016-1-31（1150點）
+                  .search-time
+                    .select-style
+                      select.is-white(name='')
+                        option(value='') 2015年6月
+                        option(value='') 2015年5月
+                        option(value='') 2015年4月
+                .table-area
+                  table.form-table.order-record
+                    caption 查詢記錄區間：2015年4月
+                    thead
+                      tr
+                        th.transaction-date 交易時間
+                        th.transaction-code 交易編號
+                        th.film-title 電影名稱
+                        th.screening 播放場次
+                        th.qty 票數
+                        th.price 金額
+                        th.payment-method 通路
+                        th.state 狀態
+                    tbody
+                      tr.record-list
+                        td.transaction-date
+                          | 2015-12-12
+                        td.transaction-code
+                          | HM201512120123
+                        td.film-title
+                          | 鴿子在樹上陳屍
+                        td.screening
+                          | 2015-12-12(22:20)
+                        td.qty
+                          | 2
+                        td.price
+                          | $540
+                        td.payment-method
+                          | 網路
+                        td.state
+                          | 正常
+                      tr.record-detail
+                        td.detail-type(colspan='9')
+                          .table-info
+                            h2 記錄明細
+                            | 訂單編號：HM201512120123
+                            span ｜
+                            | 交易時間：2015-12-12 12:34 
+                            br
+                            | 付款方式：儲值卡扣點
+                            span ｜
+                            | 儲值方式：現金
+                            span ｜
+                            | 儲值金額：500元
+                          // table-info
+                          button.news-close-btn
+                          table.responsive-table
+                            thead
+                              tr
+                                th.number(scope='col') 序號
+                                th.type(scope='col') 類型
+                                th.product-items(scope='col') 商品名稱
+                                th.hall(scope='col') 廳別
+                                th.screening(scope='col') 場次
+                                th.seat(scope='col') 座位
+                                th.payment(scope='col') 付款狀態
+                                th.tickets(scope='col') 票（編號）
+                                th.qty(scope='col') 數量
+                            tbody
+                              tr
+                                th(scope='row') 1
+                                td(data-title='類型') 票(單)
+                                td(data-title='商品名稱') 海綿寶寶：海陸大出擊（中文版）
+                                td(data-title='廳別') 八廳
+                                td(data-title='場次') 2015-12-12(22:20)
+                                td(data-title='座位') A排5號
+                                td(data-title='付款狀態') 退款
+                                td(data-title='票（編號）') 全票(03579344)
+                                td(data-title='數量') 1
+                              tr
+                                th(scope='row') 2
+                                td(data-title='類型') 餐(套)
+                                td(data-title='商品名稱') 50元會員套餐
+                                td(data-title='廳別')
+                                td(data-title='場次')
+                                td(data-title='座位')
+                                td(data-title='付款狀態') Ο
+                                td(data-title='票（編號）')
+                                td(data-title='數量') 1
+                              tr
+                                th.align-right(colspan='9') 網路手續費：0
+                              tr
+                                th.align-right(colspan='9') 付款小計：0
+                              tr
+                                th.align-right(colspan='9') 退款小計：0
+                              tr
+                                th.align-right(colspan='9') 團體折讓：0
+                              tr
+                                th.align-right(colspan='9') 折扣券折讓：0
+                              tr
+                                th.align-right(colspan='9') 總計：540
+                        // record-detail
+                      tr.record-list
+                        td.transaction-date
+                          | 2015-12-12
+                        td.transaction-code
+                          | HM201512120123
+                        td.film-title
+                          | 鴿子在樹上陳屍
+                        td.screening
+                          | 2015-12-12(22:20)
+                        td.qty
+                          | 2
+                        td.price
+                          | $540
+                        td.payment-method
+                          | 網路
+                        td.state
+                          | 正常
+                      tr.record-detail
+                        td.detail-type(colspan='9')
+                          .table-info
+                            h2 記錄明細
+                            | 訂單編號：HM201512120123
+                            span ｜
+                            | 交易時間：2015-12-12 12:34 
+                            br
+                            | 付款方式：儲值卡扣點
+                            span ｜
+                            | 儲值方式：現金
+                            span ｜
+                            | 儲值金額：500元
+                          // table-info
+                          button.news-close-btn
+                          table.responsive-table
+                            thead
+                              tr
+                                th.number(scope='col') 序號
+                                th.type(scope='col') 類型
+                                th.product-items(scope='col') 商品名稱
+                                th.hall(scope='col') 廳別
+                                th.screening(scope='col') 場次
+                                th.seat(scope='col') 座位
+                                th.payment(scope='col') 付款狀態
+                                th.tickets(scope='col') 票（編號）
+                                th.qty(scope='col') 數量
+                            tbody
+                              tr
+                                th(scope='row') 1
+                                td(data-title='類型') 票(單)
+                                td(data-title='商品名稱') 海綿寶寶：海陸大出擊（中文版）
+                                td(data-title='廳別') 八廳
+                                td(data-title='場次') 2015-12-12(22:20)
+                                td(data-title='座位') A排5號
+                                td(data-title='付款狀態') 退款
+                                td(data-title='票（編號）') 全票(03579344)
+                                td(data-title='數量') 1
+                              tr
+                                th(scope='row') 2
+                                td(data-title='類型') 餐(套)
+                                td(data-title='商品名稱') 50元會員套餐
+                                td(data-title='廳別')
+                                td(data-title='場次')
+                                td(data-title='座位')
+                                td(data-title='付款狀態') Ο
+                                td(data-title='票（編號）')
+                                td(data-title='數量') 1
+                              tr
+                                th.align-right(colspan='9') 網路手續費：0
+                              tr
+                                th.align-right(colspan='9') 付款小計：0
+                              tr
+                                th.align-right(colspan='9') 退款小計：0
+                              tr
+                                th.align-right(colspan='9') 團體折讓：0
+                              tr
+                                th.align-right(colspan='9') 折扣券折讓：0
+                              tr
+                                th.align-right(colspan='9') 總計：540
+                        // record-detail
+                      tr.record-list
+                        td.transaction-date
+                          | 2015-12-12
+                        td.transaction-code
+                          | HM201512120123
+                        td.film-title
+                          | 那一年，我們一起追的女孩叫什麼來著你說說
+                        td.screening
+                          | 2015-12-12(22:20)
+                        td.qty
+                          | 2
+                        td.price
+                          | $540
+                        td.payment-method
+                          | 網路
+                        td.state
+                          | 正常
+                      tr.record-detail
+                        td.detail-type(colspan='9')
+                          .table-info
+                            h2 記錄明細
+                            | 訂單編號：HM201512120123
+                            span ｜
+                            | 交易時間：2015-12-12 12:34 
+                            br
+                            | 付款方式：儲值卡扣點
+                            span ｜
+                            | 儲值方式：現金
+                            span ｜
+                            | 儲值金額：500元
+                          // table-info
+                          button.news-close-btn
+                          table.responsive-table
+                            thead
+                              tr
+                                th.number(scope='col') 序號
+                                th.type(scope='col') 類型
+                                th.product-items(scope='col') 商品名稱
+                                th.hall(scope='col') 廳別
+                                th.screening(scope='col') 場次
+                                th.seat(scope='col') 座位
+                                th.payment(scope='col') 付款狀態
+                                th.tickets(scope='col') 票（編號）
+                                th.qty(scope='col') 數量
+                            tbody
+                              tr
+                                th(scope='row') 1
+                                td(data-title='類型') 票(單)
+                                td(data-title='商品名稱') 海綿寶寶：海陸大出擊（中文版）
+                                td(data-title='廳別') 八廳
+                                td(data-title='場次') 2015-12-12(22:20)
+                                td(data-title='座位') A排5號
+                                td(data-title='付款狀態') 退款
+                                td(data-title='票（編號）') 全票(03579344)
+                                td(data-title='數量') 1
+                              tr
+                                th(scope='row') 2
+                                td(data-title='類型') 餐(套)
+                                td(data-title='商品名稱') 50元會員套餐
+                                td(data-title='廳別')
+                                td(data-title='場次')
+                                td(data-title='座位')
+                                td(data-title='付款狀態') Ο
+                                td(data-title='票（編號）')
+                                td(data-title='數量') 1
+                              tr
+                                th.align-right(colspan='9') 網路手續費：0
+                              tr
+                                th.align-right(colspan='9') 付款小計：0
+                              tr
+                                th.align-right(colspan='9') 退款小計：0
+                              tr
+                                th.align-right(colspan='9') 團體折讓：0
+                              tr
+                                th.align-right(colspan='9') 折扣券折讓：0
+                              tr
+                                th.align-right(colspan='9') 總計：540
+                        // record-detail
+                      tr.record-list
+                        td.transaction-date
+                          | 2015-12-12
+                        td.transaction-code
+                          | HM201512120123
+                        td.film-title
+                          | 鴿子在樹上陳屍
+                        td.screening
+                          | 2015-12-12(22:20)
+                        td.qty
+                          | 2
+                        td.price
+                          | $540
+                        td.payment-method
+                          | 網路
+                        td.state
+                          | 退票
+                      tr.record-detail
+                        td.detail-type(colspan='9')
+                          .table-info
+                            h2 記錄明細
+                            | 訂單編號：HM201512120123
+                            span ｜
+                            | 交易時間：2015-12-12 12:34 
+                            br
+                            | 付款方式：儲值卡扣點
+                            span ｜
+                            | 儲值方式：現金
+                            span ｜
+                            | 儲值金額：500元
+                          // table-info
+                          button.news-close-btn
+                          table.responsive-table
+                            thead
+                              tr
+                                th.number(scope='col') 序號
+                                th.type(scope='col') 類型
+                                th.product-items(scope='col') 商品名稱
+                                th.hall(scope='col') 廳別
+                                th.screening(scope='col') 場次
+                                th.seat(scope='col') 座位
+                                th.payment(scope='col') 付款狀態
+                                th.tickets(scope='col') 票（編號）
+                                th.qty(scope='col') 數量
+                            tbody
+                              tr
+                                th(scope='row') 1
+                                td(data-title='類型') 票(單)
+                                td(data-title='商品名稱') 海綿寶寶：海陸大出擊（中文版）
+                                td(data-title='廳別') 八廳
+                                td(data-title='場次') 2015-12-12(22:20)
+                                td(data-title='座位') A排5號
+                                td(data-title='付款狀態') 退款
+                                td(data-title='票（編號）') 全票(03579344)
+                                td(data-title='數量') 1
+                              tr
+                                th(scope='row') 2
+                                td(data-title='類型') 餐(套)
+                                td(data-title='商品名稱') 50元會員套餐
+                                td(data-title='廳別')
+                                td(data-title='場次')
+                                td(data-title='座位')
+                                td(data-title='付款狀態') Ο
+                                td(data-title='票（編號）')
+                                td(data-title='數量') 1
+                              tr
+                                th.align-right(colspan='9') 網路手續費：0
+                              tr
+                                th.align-right(colspan='9') 付款小計：0
+                              tr
+                                th.align-right(colspan='9') 退款小計：0
+                              tr
+                                th.align-right(colspan='9') 團體折讓：0
+                              tr
+                                th.align-right(colspan='9') 折扣券折讓：0
+                              tr
+                                th.align-right(colspan='9') 總計：540
+                        // record-detail
+                      tr.record-list
+                        td.transaction-date
+                          | 2015-12-12
+                        td.transaction-code
+                          | HM201512120123
+                        td.film-title
+                          | 鴿子在樹上陳屍
+                        td.screening
+                          | 2015-12-12(22:20)
+                        td.qty
+                          | 2
+                        td.price
+                          | $540
+                        td.payment-method
+                          | 網路
+                        td.state
+                          | 正常
+                      tr.record-detail
+                        td.detail-type(colspan='9')
+                          .table-info
+                            h2 記錄明細
+                            | 訂單編號：HM201512120123
+                            span ｜
+                            | 交易時間：2015-12-12 12:34 
+                            br
+                            | 付款方式：儲值卡扣點
+                            span ｜
+                            | 儲值方式：現金
+                            span ｜
+                            | 儲值金額：500元
+                          // table-info
+                          button.news-close-btn
+                          table.responsive-table
+                            thead
+                              tr
+                                th.number(scope='col') 序號
+                                th.type(scope='col') 類型
+                                th.product-items(scope='col') 商品名稱
+                                th.hall(scope='col') 廳別
+                                th.screening(scope='col') 場次
+                                th.seat(scope='col') 座位
+                                th.payment(scope='col') 付款狀態
+                                th.tickets(scope='col') 票（編號）
+                                th.qty(scope='col') 數量
+                            tbody
+                              tr
+                                th(scope='row') 1
+                                td(data-title='類型') 票(單)
+                                td(data-title='商品名稱') 海綿寶寶：海陸大出擊（中文版）
+                                td(data-title='廳別') 八廳
+                                td(data-title='場次') 2015-12-12(22:20)
+                                td(data-title='座位') A排5號
+                                td(data-title='付款狀態') 退款
+                                td(data-title='票（編號）') 全票(03579344)
+                                td(data-title='數量') 1
+                              tr
+                                th(scope='row') 2
+                                td(data-title='類型') 餐(套)
+                                td(data-title='商品名稱') 50元會員套餐
+                                td(data-title='廳別')
+                                td(data-title='場次')
+                                td(data-title='座位')
+                                td(data-title='付款狀態') Ο
+                                td(data-title='票（編號）')
+                                td(data-title='數量') 1
+                              tr
+                                th.align-right(colspan='9') 網路手續費：0
+                              tr
+                                th.align-right(colspan='9') 付款小計：0
+                              tr
+                                th.align-right(colspan='9') 退款小計：0
+                              tr
+                                th.align-right(colspan='9') 團體折讓：0
+                              tr
+                                th.align-right(colspan='9') 折扣券折讓：0
+                              tr
+                                th.align-right(colspan='9') 總計：540
+                      // record-detail
+              // tab-2
+              #tab-3.tab-table.clearfix
+                .tab-top.clearfix
+                  .user-info
+                    p
+                      | 儲值金額：1590元
+                      span ｜
+                      | 目前累計紅利：1110點
+                    p 紅利失效年度：2016-1-31（1150點）
+                  .search-time
+                    .select-style
+                      select.is-white(name='')
+                        option(value='') 2015年6月
+                        option(value='') 2015年5月
+                        option(value='') 2015年4月
+                .table-area
+                  table.form-table.stored-record
+                    caption 查詢記錄區間：2015年4月
+                    thead
+                      tr
+                        th.transaction-date 交易時間
+                        th.booking-no 訂單編號
+                        th.event 事件
+                        th.points 點數
+                        th.staff 操作人員
+                        th.notes 備註
+                    tbody
+                      tr
+                        td.transaction-date 2015-12-12
+                        td.booking-no PP201512120123
+                        td.event 儲值加點
+                        td.points 500
+                        td.staff web
+                        td.notes 網路刷卡加點
+                      tr
+                        td.transaction-date
+                          | 2015-12-01
+                        td.booking-no
+                          | PP201512010123
+                        td.event
+                          | 消費扣點
+                        td.points
+                          | -290
+                        td.staff
+                          | an
+                        td.notes
+                .teb-notes
+                  h3 儲值卡信託說明
+                  ol
+                    li
+                      | 本儲值卡信託存續期間之計算係自標的儲值卡發行日起算十二個月（所稱之發行係儲值卡最後一次儲值日為發行日），即儲值卡最後一次儲值日起，該儲值卡之所有餘額之信託期間均為十二個月。
+                    li
+                      | 信託專戶係發行人為保障消費者權益，自願以委託人名義將消費者支付之部分或全部預收款價金（以下稱「預收款」）交付信託予受託銀行，此類信託之受益人原則上為委託人而非消費者，消費者無權逕向受託銀行處分或請求返還信託財產，惟當該委託人發生解散、重整、撤銷登記或破產等事由，致無法履行交付商品或提供服務義務時，本行始依信託契約約定，召開受益權人會議分配信託財產予消費者或依法為其他處理。
+                    li
+                      | 申請人同意個人資料提供予受託銀行，並於儲值卡預收款費用信託相關之特定目的範圍內得為蒐集、處理及利用，但受託銀行應負保密之責任。
+                    li
+                      | 本受託銀行為永豐商業銀行。
+              // tab-3
+              #tab-4.tab-table.clearfix
+                .tab-top.clearfix
+                  .user-info
+                    p
+                      | 儲值金額：1590元
+                      span ｜
+                      | 目前累計紅利：1110點
+                    p 紅利失效年度：2016-1-31（1150點）
+                  .search-time
+                    .select-style
+                      select.is-white(name='')
+                        option(value='') 2015年
+                        option(value='') 2015年
+                        option(value='') 2015年
+                .table-area
+                  table.form-table.birthday-present-record
+                    caption 生日禮兌換記錄
+                    thead
+                      tr
+                        th.redeem-date 兌換日期
+                        th.product-name 商品名稱
+                        th.redeem-qty 兌換數量
+                        th.state 狀態
+                    tbody
+                      tr
+                        td.redeem-date 2015-12-12
+                        td.product-name 電影通關券
+                        td.redeem-qty 1
+                        td.state 已兌換
+              // tab-4
+      #root_footer
+    // root
+    include ./particle/_light-box
+    include ./particle/_footer

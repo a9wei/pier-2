@@ -1,0 +1,133 @@
+//// ----圖片置頂內頁
+.inside-pages
+  position: relative
+  margin: 0 auto
+.inside-pages-bg
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  width: 100%
+  height: 460px
+  overflow: hidden
+  .img-cover
+    background: url(../../images/swimming-2.jpg) no-repeat
+    background-position: center
+    width: 100%
+    height: 460px
+
+//// ----內頁置頂快速列
+.inside-pages-nav-bar
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 99
+  width: 100%
+  height: 65px
+  line-height: 65px
+  background-color: $black
+  border-bottom: 1px solid $yellow
+  overflow: hidden
+  @include transition(top 0.5s)
+  display: none
+  @include rwd($pad)
+    display: none
+
+
+.inside-pages-navbar-inner
+  padding: 0 15px
+  .inside-pages-navbar-logo
+    display: inline-block
+    float: left
+    width: 33.3%
+    text-align: left
+    .icon-logo img
+      width: 45px
+      height: 45px
+      margin-top: 10px
+  .inside-pages-navbar-info
+    display: inline-block
+    float: left
+    width: 33.3%
+    text-align: center
+    strong
+      color: $yellow
+  .inside-pages-navbar-next
+    display: inline-block
+    float: left
+    width: 33.3%
+    text-align: right
+  .icon-arrow
+    padding: 0 5px
+
+//// ----文章內頁
+.inside-pages-content, .inside-pages-list
+  width: 1170px
+  height: inherit
+  display: inline-block
+  background-color: #1e1e1e
+  border: 1px solid $yellow
+  margin: 320px auto 100px
+  padding: 50px 240px
+  @include rwd($pad)
+    width: 100%
+    padding: 50px
+    border: none
+  @include rwd($mobile)
+    padding: 50px 5%
+
+.inside-pages-tab, .club-form
+  width: 1170px
+  height: inherit
+  display: inline-block
+  margin: 320px auto 100px
+  @include rwd($pad)
+    width: 95%
+// 表單tab
+.club-form
+  width: 860px
+  margin: 50px auto 100px
+  @include rwd($pad)
+    width: 95%
+
+  h2 
+    font-size: 16px
+  .form-subtitle
+    text-align: left
+    border-top: 1px dotted
+    border-bottom: 1px dotted
+    padding: 15px 0
+    margin: 30px 0
+    input 
+      font-size: large
+    span 
+      border-bottom: 1px solid
+      padding: 0 5px
+
+.inside-pages-head
+  .inside-pages-date, .inside-pages-subtitle
+    font-size: $font-m
+    padding-top: 20px
+    color: $yellow
+    i
+      font-size: 25px
+      padding: 0 10px
+.inside-pages-subtitle
+  a 
+    color: $white
+    border-bottom: 1px dotted
+.inside-pages-main
+  text-align: left
+  p 
+    padding: 30px 0
+
+
+//// ----活動列表內頁
+.inside-pages-list
+  padding: 50px 155px
+  @include rwd($pad)
+    width: 100%
+    padding: 30px
+  @include rwd($mobile)
+    padding: 30px 10px
+    

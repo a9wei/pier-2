@@ -1,0 +1,25 @@
+@import "base/_all"
+@import "components/_buttons"
+@import "layout/_main"
+
+.inside-pages-content.about-history
+  padding: 50px
+  @include rwd($mobile)
+    padding: 50px 20px
+  .inside-pages-main p
+    padding: 0
+    color: $darkgray
+
+.search-line
+  width: 100%
+  margin: 20px 0
+  border-bottom: 1px dashed #555
+  @media screen and (max-width: 765px)
+    display: none
+  td 
+    text-align: center
+  .year-btn 
+    a
+      display: block
+      &:hover
+        color: $yellow

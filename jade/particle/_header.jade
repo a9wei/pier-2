@@ -1,0 +1,53 @@
+header
+  nav.navbar-color.navbar-fixed-top
+    .container
+      .top-btn-group
+        form.input-group.search-input(action='', method='get')
+          input.input-box(type='text', placeholder='搜尋', required='required')
+          input.search-submit-btn(type='submit', value='')
+        .search-area
+          a(href='#')
+            .circle-btn.search-btn
+          #mobile-search.search-box
+            form(action='', method='get', accept-charset='utf-8')
+              input.mobile-search-input(type='text', placeholder='搜尋', required='required')
+              input.search-submit-btn(type='submit', value='')
+        // search-area
+        a.language-transfer(href='#')
+          .circle-btn.yellow-btn.transfer-btn EN
+          .circle-btn.yellow-btn.transfer-btn(style='display: none') 中
+        a.fancybox(href='#inline1')
+          .circle-btn.login-btn
+          // 登入後加 active, 並開啟下方的login-hello
+        p.login-hello(style='display: none') Welcome, 千瑋
+      // top-btn-group
+      .nav-header
+        button.navbar-toggle(type='button')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand-logo(href='index.html')
+          img(src='../assets/images/logo-s.png', alt='映捌玖駁二電影院', title='映捌玖駁二電影院')
+        ul#mobile-menu.navbar.is-center.collapse
+          li
+            a.white-link(href='showing-movie.html') 現正熱映
+          li
+            a.white-link(href='coming-soon.html') 近期上映
+          li
+            a.white-link(href='news.html') 藝文資訊
+          li
+            a.white-link(href='about.html') 電影院介紹
+          li.home-logo
+            a.logo(href='index.html')
+              img(src='../assets/images/pier-2-logo.png', alt='映捌玖駁二電影院')
+          li
+            a.white-link(href='club.html') 影迷俱樂部
+          li
+            a.white-link(href='book-online.html') 線上訂票
+          li
+            a.white-link(href='news.html') 捌玖特報
+          li
+            a.white-link(href='fun-corner.html') 影藏角落
+      // nav-header
+    // container
+// header

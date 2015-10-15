@@ -1,0 +1,22 @@
+@import "base/_all"
+@import "components/_buttons"
+@import "layout/_main"
+
+.book-online
+  .pic-item
+    width: calc(33% - 7px)
+    border: 1px solid #fed855
+    padding: 0
+    margin: 5px
+    opacity: .7
+    @include rwd($pad)
+      width: calc(50% - 10px)
+      opacity: 1
+    @include rwd($mobile)
+      width: 100%
+      margin: 5px 0
+    &:hover
+      opacity: 1
+    .before-inner
+      text-align: center
+      font-size: 16px

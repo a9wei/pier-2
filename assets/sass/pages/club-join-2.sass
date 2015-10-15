@@ -1,0 +1,26 @@
+@import "base/_all"
+@import "components/_buttons"
+@import "layout/_main"
+
+.form-checkbox
+  margin: 10px 0 30px
+  text-align: left
+  input
+    font-size: large
+    cursor: pointer
+  label 
+    line-height: 40px
+  p 
+    text-align: left
+
+.film-type-group
+  width: 33.3%
+  display: inline-block
+  float: left
+  text-align: left
+  padding: 8px 0
+  @include rwd($mobile)
+    width: 50%
+  label
+    padding: 4% 40% 4% 3%
+    cursor: pointer

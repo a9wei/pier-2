@@ -1,0 +1,78 @@
+doctype html
+html(lang='zh-tw')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 映捌玖駁二電影院
+    link(rel='shortcut icon', type='image/x-icon', href='../assets/images/favicon.ico')
+    // google-font
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans|Black+Ops+One')
+    // font-awesome
+    link(rel='stylesheet', href='../assets/css/font-awesome.min.css')
+    // fancy-box
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox.css', media='screen')
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox-buttons.css')
+    link(rel='stylesheet', href='../assets/css/pages/fun-corner.css')
+    script(src='../assets/js/jquery-1.11.0.min.js')
+    script(src='../assets/js/jquery-migrate-1.2.1.min.js')
+    // fancy-box
+    script(src='../assets/js/fancybox/jquery.fancybox.js')
+    script(src='../assets/js/lightbox.js')
+    script(src='../assets/js/all.js')
+    script(src='../assets/js/fun-corner.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-63285262-1', 'auto');
+      ga('send', 'pageview');
+  body
+    #root
+      include ./particle/_header
+      .full-width.is-center
+        article.inside-pages
+          // inside-pages-head
+          .inside-pages-bg
+            .img-cover
+          // inside-pages-main
+          section.inside-pages-list.fun-corner
+            #news-item-1.news-item
+              button.news-close-btn
+              .news-area.clearfix
+                .news-pic
+                  img(src='../assets/images/Bersh.jpg', title='圖片內容', alt='')
+                .summary-area
+                  p.news-title 特約漫威商品專賣店
+                  p.news-subtitle.is-yellow 歡慶開幕購物滿$1890即享9折優惠，再贈送限量神秘小禮！
+                  p.news-info 
+                    | 營業時間：10:00～22:00
+                    br 
+                    | 聯絡電話：07-1234567
+              .news-content-article(style='display: none;')
+                article
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。我喜歡它燉得軟爛但仍保有形體及嚼感的肉塊與蔬菜，我更愛肉汁裡摻有蔬菜的甜，還飄著甜椒粉的煙燻氣味，無論配薯泥或薯條，甚至拌麵條或是拿麵包來蘸醬汁，怎麼吃都好吃。 
+                  br
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。
+            #news-item-2.news-item
+              button.news-close-btn
+              .news-area.clearfix
+                .news-pic
+                  img(src='../assets/images/Bersh.jpg', title='圖片內容', alt='')
+                .summary-area
+                  p.news-title 特約漫威商品專賣店
+                  p.news-subtitle.is-yellow 歡慶開幕購物滿$1890即享9折優惠，再贈送限量神秘小禮！
+                  p.news-info 
+                    | 營業時間：10:00～22:00
+                    br 
+                    | 聯絡電話：07-1234567
+              .news-content-article(style='display: none;')
+                article
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。我喜歡它燉得軟爛但仍保有形體及嚼感的肉塊與蔬菜，我更愛肉汁裡摻有蔬菜的甜，還飄著甜椒粉的煙燻氣味，無論配薯泥或薯條，甚至拌麵條或是拿麵包來蘸醬汁，怎麼吃都好吃。 
+                  br
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。
+      #root_footer
+    // root
+    include ./particle/_light-box
+    include ./particle/_footer

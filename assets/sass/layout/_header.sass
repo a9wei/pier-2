@@ -1,0 +1,176 @@
+.header
+  @include rwd($pad)
+    height: initial
+  .container
+    position: relative
+    @include rwd($pad)
+      width: 100%
+
+.navbar-color
+  background-color: $black
+  border-bottom: 2px solid $yellow
+
+.navbar-fixed-top
+  @include rwd($pad)
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1000
+
+.nav-header
+  @include rwd($pad)
+    display: block
+  .navbar-toggle
+    position: relative
+    float: right
+    padding: 9px 10px
+    margin-top: 14px
+    margin-right: 10px
+    margin-bottom: 14px
+    background-color: $darkgray
+    background-image: none
+    border: none
+    @include border-radius(4px)
+    display: none
+    @include rwd($pad)
+      display: block
+    .icon-bar
+      display: block
+      width: 22px
+      height: 3px
+      @include border-radius(1px)
+      background-color: $yellow
+    .icon-bar + .icon-bar
+      margin-top: 4px  
+
+.nav-header.active
+  .collapse
+    display: block  
+
+.navbar-brand-logo img
+  display: none
+  @include rwd($pad)
+    display: inline-block
+    width: 45px
+    height: 45px
+    margin-top: 10px
+
+.navbar
+  padding-top: 30px
+  font-size: $font-m
+  line-height: 30px
+  @include rwd($pad)
+    padding-top: 10px
+    margin: 0 -15px 8px
+    border-top: 2px solid $darkgray
+  li
+    padding: 0 22px
+    @include rwd($pad)
+      display: block
+
+  .home-logo
+    @include rwd($pad)
+      display: none
+
+  .active
+    @include rwd($pad)
+      background-color: $darkgray
+    a
+      color: $yellow
+
+.collapse
+  @include rwd($pad)
+    display: none
+
+.top-btn-group 
+  position: absolute
+  top: 0
+  right: 30px
+  z-index: 1
+  display: flex
+  margin-top: 20px
+  @include rwd($pad)
+    margin-top: 12px
+    margin-right: 50px
+  .search-input
+    @include rwd($pad)
+      display: none
+
+.search-submit-btn 
+  background: url(../../images/icons/search-color.png) no-repeat 5px 5px
+  width: 40px
+  height: 40px
+  border: none
+  position: absolute
+  top: 0px
+  right: 5px
+  cursor: pointer
+
+.search-area 
+  display: none
+  @include rwd($pad)
+    display: block
+.search-btn
+  background: url(../../images/icons/search-color.png) no-repeat 3px 4px
+
+.search-area.active .search-btn
+  background: url(../../images/icons/search.png) no-repeat 3px 4px
+  background-color: $yellow
+.search-area.active
+  #mobile-search
+    display: block
+
+
+.search-box
+  width: 100%
+  height: 150px
+  position: fixed
+  top: 63px
+  left: 0
+  background: $black
+  border-top: 2px solid $darkgray
+  border-bottom: 2px solid $yellow
+  display: none
+  .mobile-search-input
+    width: 100%
+    height: 80px
+    margin: 30px 0
+    padding: 10px
+    position: absolute
+    top: 0
+    right: 0
+    text-align: left
+    text-indent: 30px
+    font-size: 30px
+    background: $darkgray
+    border: none
+    color: $white
+    outline: none
+    @include rwd($mobile)
+      text-indent: 10px
+  .search-submit-btn
+    background: url(../../images/icons/search-gray.png) no-repeat 0 0
+    top: 50px
+    right: 30px
+
+.transfer-btn:hover
+  background: $yellow
+  color: $black
+
+.language-transfer
+  @include rwd($pad)
+    display: none
+
+.login-btn
+  background: url(../../images/icons/before-login.png) no-repeat 6px 4px
+
+.login-btn.active
+  background: url(../../images/icons/login.png) no-repeat 6px 4px
+
+.login-hello
+  display: inline-block
+  line-height: 40px
+  padding-top: 2px
+  @include rwd($mobile)
+    display: none

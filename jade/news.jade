@@ -1,0 +1,180 @@
+doctype html
+html(lang='zh-tw')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 映捌玖駁二電影院
+    link(rel='shortcut icon', type='image/x-icon', href='../assets/images/favicon.ico')
+    // google-font
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans|Black+Ops+One')
+    // font-awesome
+    link(rel='stylesheet', href='../assets/css/font-awesome.min.css')
+    // fancy-box
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox.css', media='screen')
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox-buttons.css')
+    link(rel='stylesheet', href='../assets/css/pages/news.css')
+    script(src='../assets/js/jquery-1.11.0.min.js')
+    script(src='../assets/js/jquery-migrate-1.2.1.min.js')
+    // fancy-box
+    script(src='../assets/js/fancybox/jquery.fancybox.js')
+    script(src='../assets/js/lightbox.js')
+    script(src='../assets/js/all.js')
+    script(src='../assets/js/news.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-63285262-1', 'auto');
+      ga('send', 'pageview');
+  body
+    #root
+      include ./particle/_header
+      .full-width.is-center
+        article.inside-pages
+          // inside-pages-head
+          .inside-pages-bg
+            .img-cover
+          // inside-pages-main
+          section.inside-pages-list
+            .control-group.clearfix
+              .view-display
+                a.active(href='#', title='display article by summary') 圖文摘要
+                span ｜
+                a(href='news-list.html', title='display articles by title list') 標題列表
+              .page
+                a.pre.page-disabled «
+                span.current 1
+                a(href='#') 2
+                a(href='#') 3
+                a(href='#') 4
+                a(href='#') 5
+                span.dots ...
+                a(href='#') 9
+                a.next(href='#') »
+            // control-group
+            #news-item-5.news-item
+              button.news-close-btn
+              .news-area.clearfix
+                p.date
+                  | 01-01
+                  br
+                  | 2015
+                .summary-area
+                  p.news-title 會員卡限時免費升級
+                  p.news-subtitle 免費升級會員卡限時實施中，票價更優惠、專屬福利拿不完！
+                .news-pic
+                  img(src='../assets/images/Bersh.jpg', alt='', title='圖片內容')
+              .news-content-article(style='display: none;')
+                article
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。我喜歡它燉得軟爛但仍保有形體及嚼感的肉塊與蔬菜，我更愛肉汁裡摻有蔬菜的甜，還飄著甜椒粉的煙燻氣味，無論配薯泥或薯條，甚至拌麵條或是拿麵包來蘸醬汁，怎麼吃都好吃。 
+                  br
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。
+                  br
+                  br
+                  .content-pic
+            #news-item-4.news-item
+              button.news-close-btn
+              .news-area.clearfix
+                p.date
+                  | 01-01
+                  br
+                  | 2015
+                .summary-area
+                  p.news-title 會員卡限時免費升級
+                  p.news-subtitle 免費升級會員卡限時實施中，票價更優惠、專屬福利拿不完！
+                .news-pic
+                  img(src='../assets/images/Bersh.jpg', alt='', title='圖片內容')
+              .news-content-article(style='display: none;')
+                article
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。我喜歡它燉得軟爛但仍保有形體及嚼感的肉塊與蔬菜，我更愛肉汁裡摻有蔬菜的甜，還飄著甜椒粉的煙燻氣味，無論配薯泥或薯條，甚至拌麵條或是拿麵包來蘸醬汁，怎麼吃都好吃。 
+                  br
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。
+                  br
+                  br
+                  .content-pic
+            #news-item-3.news-item
+              button.news-close-btn
+              .news-area.clearfix
+                p.date
+                  | 01-01
+                  br
+                  | 2015
+                .summary-area
+                  p.news-title 會員卡限時免費升級
+                  p.news-subtitle 免費升級會員卡限時實施中，票價更優惠、專屬福利拿不完！
+                .news-pic
+                  img(src='../assets/images/Bersh.jpg', alt='', title='圖片內容')
+              .news-content-article(style='display: none;')
+                article
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。我喜歡它燉得軟爛但仍保有形體及嚼感的肉塊與蔬菜，我更愛肉汁裡摻有蔬菜的甜，還飄著甜椒粉的煙燻氣味，無論配薯泥或薯條，甚至拌麵條或是拿麵包來蘸醬汁，怎麼吃都好吃。 
+                  br
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。
+                  br
+                  br
+                  .content-pic
+            #news-item-2.news-item
+              button.news-close-btn
+              .news-area.clearfix
+                p.date
+                  | 01-01
+                  br
+                  | 2015
+                .summary-area
+                  p.news-title 會員卡限時免費升級
+                  p.news-subtitle 免費升級會員卡限時實施中，票價更優惠、專屬福利拿不完！
+                .news-pic
+                  img(src='../assets/images/Bersh.jpg', alt='', title='圖片內容')
+              .news-content-article(style='display: none;')
+                article
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。我喜歡它燉得軟爛但仍保有形體及嚼感的肉塊與蔬菜，我更愛肉汁裡摻有蔬菜的甜，還飄著甜椒粉的煙燻氣味，無論配薯泥或薯條，甚至拌麵條或是拿麵包來蘸醬汁，怎麼吃都好吃。 
+                  br
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。
+                  br
+                  br
+                  .content-pic
+            #news-item-1.news-item
+              button.news-close-btn
+              .news-area.clearfix
+                p.date
+                  | 01-01
+                  br
+                  | 2015
+                .summary-area
+                  p.news-title 會員卡限時免費升級
+                  p.news-subtitle 免費升級會員卡限時實施中，票價更優惠、專屬福利拿不完！
+                .news-pic
+                  img(src='../assets/images/Bersh.jpg', alt='', title='圖片內容')
+              .news-content-article(style='display: none;')
+                article
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。我喜歡它燉得軟爛但仍保有形體及嚼感的肉塊與蔬菜，我更愛肉汁裡摻有蔬菜的甜，還飄著甜椒粉的煙燻氣味，無論配薯泥或薯條，甚至拌麵條或是拿麵包來蘸醬汁，怎麼吃都好吃。 
+                  br
+                  | 匈牙利燉牛肉源於匈牙利，不過在中、東歐也非常流行，它是以較便宜部位的牛肉與耐久煮的根莖類蔬菜慢燉而成，這當中再以甜椒粉和其他香料調味，是我最喜愛的燉肉之一。
+                  br
+                  br
+                  .content-pic
+            .control-group.clearfix
+              .view-display
+                a.active(href='#', title='display article by summary') 圖文摘要
+                span ｜
+                a(href='news-list.html', title='display articles by title list') 標題列表
+              .page
+                a.pre.page-disabled «
+                span.current 1
+                a(href='#') 2
+                a(href='#') 3
+                a(href='#') 4
+                a(href='#') 5
+                span.dots ...
+                a(href='#') 9
+                a.next(href='#') »
+            // control-group
+      #root_footer
+    // root
+    include ./particle/_light-box
+    include ./particle/_footer
+
+
+
+

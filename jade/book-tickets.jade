@@ -1,0 +1,158 @@
+doctype html
+html(lang='zh-tw')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 映捌玖駁二電影院
+    link(rel='shortcut icon', type='image/x-icon', href='../assets/images/favicon.ico')
+    // google-font
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans|Black+Ops+One')
+    // font-awesome
+    link(rel='stylesheet', href='../assets/css/font-awesome.min.css')
+    // fancy-box
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox.css', media='screen')
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox-buttons.css')
+    link(rel='stylesheet', href='../assets/css/pages/book-tickets.css')
+    script(src='../assets/js/jquery-1.11.0.min.js')
+    script(src='../assets/js/jquery-migrate-1.2.1.min.js')
+    // fancy-box
+    script(src='../assets/js/fancybox/jquery.fancybox.js')
+    script(src='../assets/js/lightbox.js')
+    script(src='../assets/js/all.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-63285262-1', 'auto');
+      ga('send', 'pageview');
+  body
+    #root
+      include ./particle/_header
+      .container.section-padding.booking-width.clearfix
+        form.is-center(method='post', action='')
+          .book-info
+            .book-step
+              ul
+                li.step-one 選擇電影及場次
+                li.step-next.done 選擇座位
+                li.step-next.active 選擇票種
+                li.step-next 選擇付款方式
+                li.step-next 確認訂單
+                li.step-done 完成購票
+            table.book-table
+              tbody
+                tr
+                  td.film-pic(rowspan='4')
+                    img(src='../assets/images/Canon.jpg', alt='電影劇照')
+                  td(colspan='2')
+                    | 選擇電影：鴿子在樹上跳舞
+                  td.notice(rowspan='2')
+                    | 合計金額
+                    br
+                    span $0
+                tr
+                  td
+                    | 選擇時間：5/20（三）－18:20
+                  td
+                    | 廳別：5廳
+                tr
+                  td(colspan='3')
+                    | 選擇座位：【8排21】、【8排21】、【8排21】
+                tr
+                  td(colspan='3')
+                    | 選擇票種：
+          // book-info
+          .tickets-type-group
+            table.only-tickets
+              thead
+                tr
+                  th.table-title(colspan='4') 票種與張數
+              tbody
+                tr
+                  td 全票
+                  td.price-width $ 360
+                  td.select-width
+                    .select-style
+                      select(name='', id='', required='required')
+                        option(value='-1') 1
+                        option(value='') 2
+                        option(value='') 3
+                  td.price-width $
+                tr
+                  td 優待票
+                  td.price-width $ 280
+                  td.select-width
+                    .select-style
+                      select(name='', id='', required='required')
+                        option(value='-1') 1
+                        option(value='') 2
+                        option(value='') 3
+                  td.price-width $
+                tr
+                  td 愛心票
+                  td.price-width $ 200
+                  td.select-width
+                    .select-style
+                      select(name='', id='', required='required')
+                        option(value='-1') 1
+                        option(value='') 2
+                        option(value='') 3
+                  td.price-width $
+            table.tickets-and-meals
+              thead
+                tr
+                  th.table-title(colspan='4') in89精選票餐
+              tbody
+                tr
+                  td.title-width
+                    | 獨享票餐
+                    br
+                    |                                 1張票+飲料1(中)+爆米花1(中)
+                  td.price-width $ 360
+                  td.select-width
+                    .select-style
+                      select(name='', id='', required='required')
+                        option(value='-1') 1
+                        option(value='') 2
+                        option(value='') 3
+                  td.price-width $
+                tr
+                  td.title-width
+                    | 獨享票餐
+                    br
+                    |                                 1張票+飲料1(中)+爆米花1(中)
+                  td.price-width $ 360
+                  td.select-width
+                    .select-style
+                      select(name='', id='', required='required')
+                        option(value='-1') 1
+                        option(value='') 2
+                        option(value='') 3
+                  td.price-width $2222
+                tr
+                  td.title-width
+                    | 獨享票餐
+                    br
+                    |                                 1張票+飲料1(中)+爆米花1(中)
+                  td.price-width $ 360
+                  td.select-width
+                    .select-style
+                      select(name='', id='', required='required')
+                        option(value='-1') 1
+                        option(value='') 2
+                        option(value='') 3
+                  td.price-width $
+                tr.total-price
+                  td.is-right(colspan='3') 總計
+                  td.price-width $1111
+          // tickets-type-group
+          input.round-corner-button.btn-margin(type='button', value='上一步')
+          input.round-corner-button.border-type-btn.btn-margin(type='button', value='取消')
+          input.round-corner-button.btn-margin(type='button', onclick="javascript:location.href='book-payment.html'", value='下一步')
+
+      #root_footer
+    // root
+    include ./particle/_light-box
+    include ./particle/_footer

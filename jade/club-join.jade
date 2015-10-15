@@ -1,0 +1,116 @@
+doctype html
+html(lang='zh-TW')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 映捌玖駁二電影院
+    link(rel='shortcut icon', type='image/x-icon', href='../assets/images/favicon.ico')
+    // google-font
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans|Black+Ops+One')
+    // font-awesome
+    link(rel='stylesheet', href='../assets/css/font-awesome.min.css')
+    // fancy-box
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox.css', media='screen')
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox-buttons.css')
+    link(rel='stylesheet', href='../assets/css/pages/club-join.css')
+    script(src='../assets/js/jquery-1.11.0.min.js')
+    script(src='../assets/js/jquery-migrate-1.2.1.min.js')
+    // fancy-box
+    script(src='../assets/js/fancybox/jquery.fancybox.js')
+    script(src='../assets/js/lightbox.js')
+    script(src='../assets/js/all.js')
+    // inside.nav's 內頁header
+    script(src='../assets/js/inside-nav.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-63285262-1', 'auto');
+      ga('send', 'pageview');
+  body
+    #root
+      include ./particle/_header
+      .full-width.is-center
+        article.inside-pages
+          .inside-pages-nav-bar.scrolled
+            .inside-pages-navbar-inner.clearfix
+              .inside-pages-navbar-logo
+                a.icon-logo(href='/', rel='home', title='映捌玖駁二電影院logo')
+                  img(src='../assets/images/logo-s.png', alt='映捌玖駁二電影院logo')
+              .inside-pages-navbar-info
+                a(href='club.html', title='影迷俱樂部') 影迷俱樂部
+                span.icon-arrow &gt;
+                strong 加入會員
+              .inside-pages-navbar-next
+                a(href='club-store.html')
+                  span.icon-arrow &gt;
+                  strong 友好店家優惠
+          // inside-pages-main
+          section.inside-pages-content.club-form
+            h1.title-underline 會員申請表填寫
+            h2.form-subtitle.is-yellow
+              | 提醒您，會員線上申辦需完成付款程序（入會$899）
+              | 方才取得會員資格與享有會員專屬優惠喔！
+              br
+              | 基本資料提供（＊為必填選項）
+            form.application-group(method='post', action='')
+              .form-item
+                label(for='name')
+                  span.is-yellow ＊
+                  | 姓名
+                input#name(type='text', name='name', placeholder='您的大名', required='required')
+              .form-item.gender.clearfix
+                p.form-title
+                  span.is-yellow ＊
+                  | 性別
+                .select-style
+                  select.is-white(name='')
+                    option(value='-1') 請選擇
+                    option(value='') 男
+                    option(value='') 女
+              .form-item
+                label(for='birthday')
+                  span.is-yellow ＊
+                  | 生日
+                input#birthday(type='date', name='birthday', required='required')
+              .form-item
+                label(for='id-number')
+                  span.is-yellow ＊
+                  | 身分証字號／護照號碼
+                input#id-number(type='text', name='id-number', placeholder='開頭英文字母請大寫', required='required')
+              .form-item
+                label(for='phone')
+                  span.is-yellow ＊
+                  | 電話
+                input#phone(type='tel', name='phone', placeholder='例：02-23315077')
+              .form-item
+                label(for='mobile-phone')
+                  span.is-yellow ＊
+                  | 手機
+                input#mobile-phone(type='tel', name='mobile-phone', placeholder='例：0912-345678', required='required')
+              .form-item
+                label(for='usermail')
+                  span.is-yellow ＊
+                  | 電子郵件
+                input#usermail(type='email', name='usermail', placeholder='此為重要聯絡管道，請填寫可聯繫信箱', required='required')
+              .form-item.clearfix
+                label(for='address') 通訊地址
+                .select-style.address-select
+                  select.is-white(name='')
+                    option(value='') 中正區
+                    option(value='') 中山區
+                    option(value='') 松山區
+                .select-style.address-select
+                  select.is-white(name='')
+                    option(value='') 台北市
+                    option(value='') 新北市
+                    option(value='') 桃園市
+                input#address(type='text', name='address', value='')
+              input.round-corner-button(type='submit', onclick="javascript:location.href='club-join-2.html'", value='下一步')
+
+      #root_footer
+    // root
+    include ./particle/_light-box
+    include ./particle/_footer

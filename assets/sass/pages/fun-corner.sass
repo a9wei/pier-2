@@ -1,0 +1,70 @@
+@import "base/_all"
+@import "components/_buttons"
+@import "layout/_main"
+
+
+//// 活動列表
+.news-item
+  position: relative
+  border-bottom: 1px solid rgba(254, 216, 85, 0.5)
+  &:hover
+    cursor: pointer
+    background-color: $darkgray
+
+.news-item.open
+  background-color: $darkgray
+  .news-close-btn
+    display: block
+  &:hover 
+    cursor: default
+
+.news-area
+  width: 100%
+  padding: 10px
+  .date
+    width: 60px
+    display: inline-block
+    float: left
+    padding: 5px 0
+    background-color: $yellow
+    color: $black
+    text-align: center
+    font-weight: bold
+  .summary-area
+    width: 70%
+    float: left
+    display: inline-block
+    padding: 0 20px
+    text-align: left
+    overflow: hidden
+    @media screen and (max-width: 765px)
+      width: 90%
+    @include rwd($mobile)
+      padding: 0 10px
+    .news-title
+      font-size: 16px
+    .news-subtitle, .news-info
+      padding: 5px 0
+
+  .news-pic
+    width: 25%
+    float: left
+    display: inline-block
+    @media screen and (max-width: 765px)
+      display: none
+
+.news-list-area
+  .summary-area
+    width: 85%
+    @include rwd($mobile)
+      width: 70%
+
+.news-content-article
+  text-align: left
+  padding: 10px 10px 30px 240px
+  @include rwd($pad)
+    padding: 10px 10px 30px
+  @media screen and (max-width: 765px)
+    padding: 10px 30px 30px
+  @include rwd($mobile)
+    padding: 20px

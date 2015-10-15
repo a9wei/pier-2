@@ -1,0 +1,55 @@
+//// ----黃框圓形icon-btn
+.circle-btn
+  width: 40px
+  height: 40px
+  display: inline-block
+  font-weight: bold
+  text-align: center
+  line-height: 40px
+  border: 1px solid $yellow
+  @include border-radius(100%)
+  color: $yellow
+  margin: 0 8px
+  i 
+    font-size: 25px
+    line-height: 40px
+
+//// ----圓角框btn
+.round-corner-button
+  width: 150px
+  height: 40px
+  border: none
+  @include border-radius(20px)
+  font-size: 16px
+  font-weight: bold
+  background-color: $yellow
+  cursor: pointer
+
+.round-corner-button.border-type-btn
+  border: 2px solid $yellow
+  background: none
+  color: $yellow
+
+.black-type-btn
+  background-color: #2b2b2b
+  color: $yellow
+
+.btn-margin 
+  margin: 30px 15px
+//// ----活動列表btn
+.news-close-btn
+  background: url(../../images/close-btn.png) no-repeat
+  width: 40px
+  height: 40px
+  border: none
+  position: absolute
+  top: 10px
+  right: 10px
+  display: none
+
+//// disabled-type
+.btn-disabled
+  cursor: no-drop
+  color: #000
+  opacity: .5
+

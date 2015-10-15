@@ -1,0 +1,45 @@
+.light-box-inline
+  #inline1.light-box.clearfix(style='display: none;')
+    h1.title-underline 立即登入
+    form(action='post')
+      .input-area
+        input#user.light-box-input.login-icon(type='text', name='user', placeholder='帳號：身分証字號，開頭字母大寫', required='required')
+        input#password.light-box-input.password-icon(type='password', name='password', placeholder='密碼', required='required')
+        .light-box-note.clearfix
+          a.fancybox.light-box-note-left(href='#inline2') 忘記密碼？
+          // 開啟忘記密碼的light-box
+          a.light-box-note-right(href='club-in-card.html') 加入會員有什麼好處？
+      // input-area
+      input.round-corner-button.black-type-btn.btn-margin(type='button', onclick="javascript:location.href='#inline4'", value='登入')
+      input.round-corner-button.btn-margin(type='button', onclick="javascript:location.href='club-join.html'", value='還沒有帳號嗎？')
+      br
+      a.fancybox(href='#inline4') choose
+  // inline1
+  #inline2.light-box.clearfix(style='display: none;')
+    h1.title-underline 忘記密碼
+    h2 請輸入您的email信箱，我們將協助您重新設定密碼。
+    form(action='post')
+      .input-area
+        input.light-box-input.mail-icon(type='email', name='email', placeholder='您的email', required='required')
+        .captcha-img
+        input#captcha.light-box-input.captcha(type='text', name='captcha', placeholder='字母不分大小寫', required='required')
+      // input-area
+      input.round-corner-button.black-type-btn.btn-margin(type='button', onclick='', value='送出')
+    a.fancybox(href='#inline3') sent mail
+  // inline2
+  #inline3.light-box.clearfix(style='display: none;')
+    h1.title-underline 認證信寄送
+    h2
+      | 我們已將認證信件寄至您的信箱。
+      br
+      |                 請前往收取並完成後續操作，謝謝您。
+  // inline3
+  #inline4.light-box.clearfix(style='display: none;')
+    h1.title-underline 選擇您本次購票使用的身份
+    h2
+      | 使用年票身份購票，單次購買最多可再加購２張會員票，每筆訂單６張為上限。
+      br
+      |                 使用會員身份購票，單次購買最多２張會員票，每筆訂單６張為上限。
+    input.round-corner-button.black-type-btn.btn-margin(type='button', onclick='', value='會員資格')
+    input.round-corner-button.black-type-btn.btn-margin(type='button', onclick='', value='年票資格')
+  // inline4

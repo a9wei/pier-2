@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Black+Ops+One)
+@import "compass/reset"
+@import "compass/css3"
+@import "compass/utilities"
+@import "compass/layout"
+
+@import "helpers/_main"
+
+* 
+  @include css3(box-sizing, border-box)
+
+body
+  background: $black
+  font-family: "Meiryo", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", "微軟雅黑體", Arial, sans-serif
+  font-size: $font-base
+  line-height: 25px
+  color: $white
+  @include rwd($pad)
+    padding-top: 65px
+
+li 
+  display: inline-block
+
+a
+  color: $white
+  text-decoration: none
+
+img
+  width: 100%
+
+h1 
+  font-size: 35px
+  line-height: 35px
+  text-transform: uppercase
+
+button 
+  cursor: pointer
+
+.clearfix 
+  overflow: auto
+
+.clear 
+  clear: both
+
+.container
+  margin: 0 auto
+  padding-left: 15px
+  padding-right: 15px
+  @include rwd($web)
+    width: 1170px
+  @include rwd($pad)
+    width: 100%
+  @include rwd($mobile)
+    width: 100%
+
+.column-3
+  @include rwd($web)
+    width: 33.3%
+    float: left
+    display: inline-block
+  @include rwd($pad)
+    width: 33.3%
+    float: left
+    display: inline-block
+  @include rwd($mobile)
+    width: 100%

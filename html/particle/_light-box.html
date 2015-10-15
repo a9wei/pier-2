@@ -1,0 +1,45 @@
+
+<div class="light-box-inline">
+  <div id="inline1" style="display: none;" class="light-box clearfix">
+    <h1 class="title-underline">立即登入</h1>
+    <form action="post">
+      <div class="input-area">
+        <input id="user" type="text" name="user" placeholder="帳號：身分証字號，開頭字母大寫" required="required" class="light-box-input login-icon"/>
+        <input id="password" type="password" name="password" placeholder="密碼" required="required" class="light-box-input password-icon"/>
+        <div class="light-box-note clearfix"><a href="#inline2" class="fancybox light-box-note-left">忘記密碼？</a>
+          <!-- 開啟忘記密碼的light-box--><a href="club-in-card.html" class="light-box-note-right">加入會員有什麼好處？</a>
+        </div>
+      </div>
+      <!-- input-area-->
+      <input type="button" onclick="javascript:location.href='#inline4'" value="登入" class="round-corner-button black-type-btn btn-margin"/>
+      <input type="button" onclick="javascript:location.href='club-join.html'" value="還沒有帳號嗎？" class="round-corner-button btn-margin"/><br/><a href="#inline4" class="fancybox">choose</a>
+    </form>
+  </div>
+  <!-- inline1-->
+  <div id="inline2" style="display: none;" class="light-box clearfix">
+    <h1 class="title-underline">忘記密碼</h1>
+    <h2>請輸入您的email信箱，我們將協助您重新設定密碼。</h2>
+    <form action="post">
+      <div class="input-area">
+        <input type="email" name="email" placeholder="您的email" required="required" class="light-box-input mail-icon"/>
+        <div class="captcha-img"></div>
+        <input id="captcha" type="text" name="captcha" placeholder="字母不分大小寫" required="required" class="light-box-input captcha"/>
+      </div>
+      <!-- input-area-->
+      <input type="button" onclick="" value="送出" class="round-corner-button black-type-btn btn-margin"/>
+    </form><a href="#inline3" class="fancybox">sent mail</a>
+  </div>
+  <!-- inline2-->
+  <div id="inline3" style="display: none;" class="light-box clearfix">
+    <h1 class="title-underline">認證信寄送</h1>
+    <h2>我們已將認證信件寄至您的信箱。<br/>                請前往收取並完成後續操作，謝謝您。</h2>
+  </div>
+  <!-- inline3-->
+  <div id="inline4" style="display: none;" class="light-box clearfix">
+    <h1 class="title-underline">選擇您本次購票使用的身份</h1>
+    <h2>使用年票身份購票，單次購買最多可再加購２張會員票，每筆訂單６張為上限。<br/>                使用會員身份購票，單次購買最多２張會員票，每筆訂單６張為上限。</h2>
+    <input type="button" onclick="" value="會員資格" class="round-corner-button black-type-btn btn-margin"/>
+    <input type="button" onclick="" value="年票資格" class="round-corner-button black-type-btn btn-margin"/>
+  </div>
+  <!-- inline4-->
+</div>

@@ -1,0 +1,178 @@
+@import "base/_all"
+@import "layout/_main"
+@import "components/_buttons"
+
+.slideshow
+  display: inline-block
+  width: 100%
+
+//// member-ad+book
+.member-ad 
+  margin: 10px
+  float: left
+  display: flex
+  @include rwd($pad) 
+    float: left 
+    display: inline-block
+    width: 300px
+  @media screen and (max-width: 600px)
+    float: none
+    display: inline-block
+    width: 100%
+    margin: 10px 0 0
+
+.big-icons-separate
+  width: 25%
+  float: left
+  display: inline-block
+  padding: 0px 5px
+  border-right: 1px solid $black
+  margin: 5px 0
+  &:last-child
+    border: none
+  i 
+    display: inline-block
+    color: $black
+    font-size: 70px
+  &:hover .fa-facebook-square 
+    color: #3B579E
+  &:hover .fa-youtube-square 
+    color: #D51A2D
+  &:hover .fa-instagram
+    color: #9B6D54
+  &:hover .fa-envelope-o 
+    color: #7CAA2C
+
+.book-area 
+  width: 630px
+  height: 200px
+  float: right
+  background: $black
+  margin: 10px
+  padding: 10px
+  @media screen and (max-width: 1024px)
+    // float: right
+  @include rwd($pad)
+    width: 100%
+    float: none
+    margin: 10px auto
+  @include rwd($mobile)
+    display: none
+
+.booking-link-btn 
+  display: none
+  a 
+    display: block
+    background-color: $darkgray
+    border-bottom: 8px solid $black
+    border-right: 4px solid #4A4A4A
+    border-left: 4px solid #222
+    border-top: 2px solid #626262
+    margin: 10px 0
+    height: 75px
+    @include border-radius(3px)
+    color: $yellow
+    font-size: 25px
+    line-height: 75px
+    i 
+      padding: 0 10px
+  @include rwd($mobile)
+    display: block
+
+//// modify-select
+.select-group 
+  width: 85%
+  margin: 10px 0
+  display: inline-block
+  float: left
+
+.select-style.choose-date, .select-style.choose-showing 
+  width: 50%
+  display: inline-block
+  float: left
+
+.book-submit 
+  width: 14%
+  height: 95px
+  background: #fed855
+  border: none
+  font-size: $font-l
+  margin: 20px 0px
+  float: right
+  cursor: pointer
+  @include border-radius(2px)
+  border-right: 5px solid #D39311
+  border-bottom: 10px solid #A87816
+  border-left: 3px solid #E3C14B
+  @media screen and (max-width: 800px)
+    font-size: 17px
+
+.quick-link
+  @media screen and (max-width: 1024px)
+    border: none
+  @media screen and (max-width: 600px)
+    border-top: 1px solid $black
+  @include rwd($mobile)
+    border-top: 1px solid $black
+
+.quick-link .social-media-logo-group
+  width: 630px
+  float: right
+  margin: 10px
+  display: inline-block
+  @include rwd($pad)
+    display: none
+  @include rwd($mobile)
+    display: none
+
+.social-media-logo-group 
+  margin: 20px 0
+
+//// special
+.special-img 
+  padding: 3px
+  float: left
+
+//// found-link-group
+.found-link-group
+  padding: 25px 0
+  .big-icons-separate
+    a 
+      width: 100%
+      display: block
+      &:hover
+        i
+          @include css3(transform, rotate(-8deg))
+      h5 
+        color: $black
+        font-weight: bold
+        text-transform: uppercase
+    &:nth-of-type(even):hover
+      i 
+        @include css3(transform, rotate(8deg))
+
+  @include rwd($mobile)
+    display: none
+
+//// web-list
+.web-list
+  @include rwd($pad)
+    display: none
+  @include rwd($mobile)
+    display: none
+
+//// guide
+.guide-list 
+  width: 15%
+  float: left
+  display: inline-block
+  font-size: 12px
+  line-height: 30px
+  text-align: left
+  margin: 50px 9px
+  padding-top: 10px
+  border-top: 1px solid $white
+  p a 
+    color: $gray
+    &:hover
+      color: $white

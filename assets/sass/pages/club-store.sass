@@ -1,0 +1,67 @@
+@import "base/_all"
+@import "components/_buttons"
+@import "layout/_main"
+
+
+.club-store
+  .transformer-tabs
+    li
+      width: 20%
+      @media screen and (max-width: 700px)
+        display: block
+        width: 100%
+  .tabs 
+    > .active
+      padding: 50px 25px    
+  .pic-item
+    width: 20%
+    @include rwd($pad)
+      width: 25%
+    &:hover .before-box
+      display: block
+      bottom: 0
+      @include transition(1s)
+      @include rwd($pad)
+        display: none
+  .pic-item.active 
+    .before-box
+      display: block
+      bottom: 0
+      height: 100%
+      @include transition(1s)
+  @media screen and (max-width: 1000px) 
+    .pic-item
+      width: 33.3%
+      .phone, .address
+        display: none
+  @media screen and (max-width: 700px) 
+    .pic-item
+      width: 50%
+  @media screen and (max-width: 500px) 
+    .pic-item
+      width: 100%
+
+.club-store
+  .pic-item
+    &:hover .before-box
+      height: 100%
+
+.club-store
+  .before-wrapper
+    .before-box 
+      @include rwd($pad)
+        display: none
+        // bottom: -250px
+    .before-inner
+      padding: 10px 20px
+      .title
+        border-bottom: 1px dotted $white
+        display: inline-block
+      .subtitle
+        display: block
+        height: 125px
+        margin: 10px 0
+        padding: 5px 0
+        overflow: hidden
+      i 
+        padding-right: 10px

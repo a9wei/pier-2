@@ -1,0 +1,46 @@
+$black: #000
+$yellow: #fed855
+$white: #fff
+$gray: #c1c1c1
+$darkgray: #333
+$transparent: transparent
+$font-base: 14px
+$font-m: 16px
+$font-l: 20px
+
+$web: 1920px
+$pad: 1080px
+$mobile: 500px
+
+
+//mixin
+@mixin css3($key, $value)
+  -webkit-#{$key}: $value
+  -moz-#{$key}: $value
+  -o-#{$key}: $value
+  -ms-#{$key}: $value
+  #{$key}: $value
+
+@mixin rwd($device)
+  @media screen and (max-width: $device)
+    @content
+	
+
+
+//extend
+%english-big-title
+  font-family: 'Black Ops One', cursive
+  color: $yellow
+  line-height: 50px
+  letter-spacing: 3px
+  border-bottom: 1px solid $yellow
+
+%btn-basic
+  @include border-radius(20px)
+  font-size: 20px
+  color: $black
+  background: $yellow
+
+%translucent-style
+  background-color: rgba(255, 255, 255, 0.2)
+  border: 2px solid #DDD

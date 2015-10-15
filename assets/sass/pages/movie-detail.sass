@@ -1,0 +1,114 @@
+@import "base/_all"
+@import "components/_buttons"
+@import "layout/_main"
+ 
+.pic-slide-group
+  position: relative
+
+.rslides_tabs
+  position: absolute
+  display: block
+  bottom: 0
+  left: 0
+  z-index: 2
+  margin: 0 auto
+  @include rwd($mobile)
+    display: none
+
+
+.movie-content
+  width: 1170px
+  height: inherit
+  display: inline-block
+  background-color: #1e1e1e
+  border: 1px solid $yellow
+  margin: 0 auto
+  padding: 35px 60px
+  @include rwd($pad)
+    width: 100%
+    padding: 50px 30px
+    border: none
+  @include rwd($mobile)
+    padding: 50px 5%
+  .inside-pages-title
+    text-align: left
+    .title-underline
+      text-align: left
+      display: block
+      @media screen and (max-width: 600px)
+        font-size: 25px
+      span
+        font-size: 25px
+        @media screen and (max-width: 600px)
+          font-size: 20px
+
+
+.movie-info
+  width: 30%
+  display: inline-block
+  float: left
+  @media screen and (max-width: 600px)
+    float: none
+    width: 100%
+  ul 
+    padding: 25px 0
+    padding-right: 15%
+    @media screen and (max-width: 800px)
+      padding-right: 10%
+    li 
+      display: block
+    .is-yellow
+      line-height: 35px
+  .special-list
+    border-top: 1px dotted $yellow
+    display: inline-block
+
+.movie-detail
+  width: 70%
+  display: inline-block
+  float: left
+  @media screen and (max-width: 600px)
+    float: none
+    width: 100%
+  h3
+    line-height: 35px
+  .movie-summary, .screening-tab, .marketing-link
+    padding: 25px 0
+  .marketing-link
+    img
+      background-color: #888
+
+.screening-tab
+  .transformer-tabs
+    li
+      width: 20%
+      @media screen and (max-width: 700px)
+        display: block
+        width: 100%
+  .tabs 
+    > .active
+      padding: 10px
+
+
+.screening-list
+  li 
+    display: block
+    line-height: 40px
+    border-bottom: 1px solid #666
+    &:last-child
+      border-bottom: none
+  .screening-link
+    margin-right: 20px
+    border-bottom: 1px solid
+    &:hover
+      color: $yellow
+
+.movie-btn-group
+  @media screen and (max-width: 500px)
+    .btn-margin
+      margin: 15px
+
+
+
+
+

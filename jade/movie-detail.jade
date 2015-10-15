@@ -1,0 +1,211 @@
+doctype html
+html(lang='zh-tw')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 映捌玖駁二電影院
+    link(rel='shortcut icon', type='image/x-icon', href='../assets/images/favicon.ico')
+    // google-font
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans|Black+Ops+One')
+    // font-awesome
+    link(rel='stylesheet', href='../assets/css/font-awesome.min.css')
+    // fancy-box
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox.css', media='screen')
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox-buttons.css')
+    // slide
+    link(rel='stylesheet', href='../assets/css/responsiveslides.css')
+    link(rel='stylesheet', href='../assets/css/tab.css')
+    link(rel='stylesheet', href='../assets/css/pages/movie-detail.css')
+
+    script(src='../assets/js/jquery-1.11.0.min.js')
+    script(src='../assets/js/jquery-migrate-1.2.1.min.js')
+    // fancy-box
+    script(src='../assets/js/fancybox/jquery.fancybox.js')
+    // slide
+    script(src='../assets/js/slide/responsiveslides.min.js')
+    // tab's
+    script(src='../assets/js/prefixfree.min.js')
+    script(src='../assets/js/tab.js')
+    script(src='../assets/js/lightbox.js')
+    script(src='../assets/js/all.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-63285262-1', 'auto');
+      ga('send', 'pageview');
+    script.
+      $(function () {
+      $("#slider3").responsiveSlides({
+      manualControls: '#slider3-pager',
+      // maxwidth: 540
+      });
+      });
+  body
+    #root
+      include ./particle/_header
+      .full-width.is-center
+        article.inside-pages
+          #wrapper
+            .pic-slide-group
+              ul#slider3.rslides
+                li
+                  img(src='../assets/images/slide/1.jpg', alt='')
+                li
+                  img(src='../assets/images/slide/2.jpg', alt='')
+                li
+                  img(src='../assets/images/slide/3.jpg', alt='')
+              // Slideshow 3 Pager
+              ul#slider3-pager
+                li
+                  a(href='#')
+                    img(src='../assets/images/slide/1_thumb.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='../assets/images/slide/2_thumb.jpg', alt='')
+                li
+                  a(href='#')
+                    img(src='../assets/images/slide/3_thumb.jpg', alt='')
+          // wrapper
+          .movie-btn-group
+            a.various(class='fancybox.iframe', href='http://www.youtube.com/embed/L9szn1QQfas?autoplay=1')
+              input.round-corner-button.btn-margin.border-type-btn(type='button', value='觀賞預告')
+            input.round-corner-button.btn-margin.btn-disabled(type='button', onclick="javascript:location.href='book-movie.html'", value='立即訂票', disabled='disabled')
+          // inside-pages-main
+          section.movie-content
+            .inside-pages-head
+              .inside-pages-title
+                h1.title-underline
+                  | 鴿子在樹上跳舞
+                  br
+                  span A Pigeon Sat on a Branch Reflecting on Existence
+            .inside-pages-main.clearfix
+              .movie-info
+                ul
+                  li.is-yellow 影片資訊
+                  li 上映日期：2015-06-06
+                  li 影片年份：2014
+                  li 發行商：東昊 
+                  li 語言：Swedish
+                  li 字幕：中文／英文
+                  li 片長：133分
+                  li 級數：保護級
+                  li 導演：洛伊安德森
+                  li 編劇：洛伊安德森
+                  li
+                    | 演員：Holger Andersson, Nils Westblom, Viktor Gyllenberg
+                ul.special-list.is-yellow
+                  li 2014金驢獎
+                  li 2013東東隆冬獎入圍
+              .movie-detail
+                .movie-summary
+                  h3.is-yellow 劇情簡介：
+                  .movie-article
+                    | 鴿子在樹枝上沈思不但是瑞典導演洛伊安德森苦思4年的最新力作，也是人性三部曲的最終篇。影片在威尼斯影展得滿堂彩，勇奪第71屆最佳影片金獅獎。被評審團譽為是：真實又具有想像力的影片！ 
+                    br
+                    | 全片由39個場景構成，將人類的生活瑣碎經歷誇張化，如同畫作一般將人類的歷史與生活濃縮其中。影片維持他一貫的作者語言：鏡頭如詩如畫又寓意悠遠，情節幽默詩意、蒼白臉孔的角色，但個個特立獨行。片名來自偉大的尼德蘭畫家老勃魯蓋爾的名作《雪中獵人》，這幅畫描繪了一群獵人打獵歸來的場景，畫中的樹枝上停著兩隻黑色的鳥兒。 
+                    br
+                    | 故事追隨薩姆和喬納森這對推銷搞笑玩具的流動商人的足跡，伴隨他們一戶戶上門兜售商品，如同導遊帶領觀眾在不同地點不同人物時空中，泛覽人生。片中交織著許多奇幻幽默的插曲：對男學生肉體垂涎的女舞蹈老師、大排場當眾對酒保示愛的同志國王、讓男士兵輪流索吻的女餐廳店長等等。導演透過幽默的口吻敘事，讓觀眾窺視小人物在荒誕又百生活中，找尋人與人之間遺失的情感連結。
+                .movie-screening.screening-tab
+                  h3.is-yellow 電影場次表：
+                  .tabs
+                    nav.transformer-tabs.clearfix(role='navigation')
+                      ul
+                        li
+                          // width: 等分至100%
+                          a.active(href='#tab-1')
+                            | 6/1（ㄧ）
+                        li
+                          a(href='#tab-2')
+                            | 6/2（二）
+                        li
+                          a(href='#tab-3')
+                            | 6/3（三）
+                        li
+                          a(href='#tab-4')
+                            | 6/4（四）
+                        li
+                          a(href='#tab-5')
+                            | 6/5（五）
+                    #tab-1.active.clearfix
+                      ul.screening-list
+                        li 版本：2D
+                        li
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                        li 版本：3D
+                        li
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                    // tab-1
+                    #tab-2.clearfix
+                      ul.screening-list
+                        li 版本：2D
+                        li
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                        li 版本：3D
+                        li
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                    // tab-2
+                    #tab-3.clearfix
+                      ul.screening-list
+                        li 版本：2D
+                        li
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                        li 版本：3D
+                        li
+                          a.screening-link(href='#') 11:00
+                    // tab-3
+                    #tab-4.clearfix
+                      ul.screening-list
+                        li 版本：2D
+                        li
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                        li 版本：3D
+                        li
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                    // tab-4
+                    #tab-5.clearfix
+                      ul.screening-list
+                        li 版本：2D
+                        li
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                        li 版本：3D
+                        li
+                          a.screening-link(href='#') 11:00
+                          a.screening-link(href='#') 11:00
+                    // tab-5
+                .marketing-link
+                  a(href='#')
+                    img(src='../assets/images/banner-vip.jpg', alt='預售套票宣傳banner')
+          .movie-btn-group
+            a.various(class='fancybox.iframe', href='http://www.youtube.com/embed/L9szn1QQfas?autoplay=1')
+            input.round-corner-button.btn-margin.border-type-btn(type='button', value='觀賞預告')
+            input.round-corner-button.btn-margin(type='button', onclick="javascript:location.href='book-movie.html'", value='立即訂票')
+      #root_footer
+      #root_footer
+    // root
+    include ./particle/_light-box
+    include ./particle/_footer
+

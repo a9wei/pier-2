@@ -1,0 +1,130 @@
+doctype html
+html(lang='zh-tw')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 映捌玖駁二電影院
+    link(rel='shortcut icon', type='image/x-icon', href='../assets/images/favicon.ico')
+    // google-font
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans|Black+Ops+One')
+    // font-awesome
+    link(rel='stylesheet', href='../assets/css/font-awesome.min.css')
+    // fancy-box
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox.css', media='screen')
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox-buttons.css')
+    link(rel='stylesheet', href='../assets/css/tab.css')
+    link(rel='stylesheet', href='../assets/css/pages/club-store.css')
+    script(src='../assets/js/jquery-1.11.0.min.js')
+    script(src='../assets/js/jquery-migrate-1.2.1.min.js')
+    // fancy-box
+    script(src='../assets/js/fancybox/jquery.fancybox.js')
+    script(src='../assets/js/lightbox.js')
+    script(src='../assets/js/all.js')
+    // tab's
+    script(src='../assets/js/prefixfree.min.js')
+    script(src='../assets/js/tab.js')
+    // inside.nav's 內頁header
+    script(src='../assets/js/inside-nav.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-63285262-1', 'auto');
+      ga('send', 'pageview');
+    script.
+      $(document).ready(function(){
+      $('.pic-item').each(function(){
+      $(this).on('click', function(e){
+      e.preventDefault();
+      console.log('hihi');
+      $(this).toggleClass('active');
+      })
+      })
+      });
+  body
+    #root
+      include ./particle/_header
+      .full-width.is-center
+        article.inside-pages
+          // inside-pages-head
+          .inside-pages-bg
+            .img-cover
+          .inside-pages-nav-bar.scrolled
+            .inside-pages-navbar-inner.clearfix
+              .inside-pages-navbar-logo
+                a.icon-logo(href='/', rel='home', title='映捌玖駁二電影院logo')
+                  img(src='../assets/images/logo-s.png', alt='映捌玖駁二電影院logo')
+              .inside-pages-navbar-info
+                a(href='club.html', title='影迷俱樂部') 影迷俱樂部
+                span.icon-arrow &gt;
+                strong 友好店家優惠
+              .inside-pages-navbar-next
+                a(href='club-history.html')
+                  span.icon-arrow &gt;
+                  strong 歷代卡樣
+          // inside-pages-main
+          section.inside-pages-tab.club-store
+            .tabs
+              nav.transformer-tabs.clearfix(role='navigation')
+                ul
+                  li
+                    // width: 等分至100%
+                    a.active(href='#tab-1')
+                      i.fa.fa-th-large
+                      | 顯示全部
+                  li
+                    a(href='#tab-2')
+                      i.fa.fa-asterisk
+                      | 季節限定
+                  li
+                    a(href='#tab-3')
+                      i.fa.fa-thumbs-o-up
+                      | 人氣老店
+                  li
+                    a(href='#tab-4')
+                      i.fa.fa-glass
+                      | 冰品冷飲
+                  li
+                    a(href='#tab-5')
+                      i.fa.fa-star
+                      | 生活娛樂
+              #tab-1.active.clearfix
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+              #tab-2.clearfix
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+              #tab-3.clearfix
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+              #tab-4.clearfix
+                include ./particle/_store-item
+                include ./particle/_store-item
+              #tab-5.clearfix
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+                include ./particle/_store-item
+      #root_footer
+    // root
+    include ./particle/_light-box
+    include ./particle/_footer

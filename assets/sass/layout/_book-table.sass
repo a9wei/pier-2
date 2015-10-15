@@ -1,0 +1,82 @@
+.booking-width
+  width: 1170px
+
+.book-info
+  width: 100%
+  border: 3px solid $yellow
+
+.book-step
+  height: 50px
+  border-bottom: 2px solid $yellow
+  ul
+    li 
+      width: 16.6%
+      display: inline-block
+      float: left
+      font-size: 16px
+      line-height: 50px
+      text-align: center
+  .active, .done
+    background: $yellow
+    color: $black
+  .step-one
+    color: $black
+  .step-one, .step-next, .step-done
+    background: url(../../images/step-one.png) no-repeat
+    width: 189px
+    height: 50px
+  .step-next
+    background: url(../../images/step-before-next.png) no-repeat
+  .step-next.active, .step-next.done
+    background: url(../../images/step-next.png) no-repeat
+  .step-done
+    background: url(../../images/step-before-done.png) no-repeat
+  .step-done.active
+    background: url(../../images/step-done.png) no-repeat
+
+.book-table
+  width: 100%
+  .film-pic 
+    width: 180px
+    padding: 10px
+  tr 
+    border-top: 1px solid $yellow
+    td 
+      padding: 0 20px
+      line-height: 50px
+      border-right: 1px solid $yellow
+  .select-style
+    width: 250px
+    display: block
+    margin: 8px 0
+    line-height: 40px
+  .notice
+    line-height: 35px
+    text-align: center
+    span 
+      font-size: 35px
+  .discount
+    .coupon-input
+      text-indent: 10px
+      width: 200px
+      height: 40px
+      font-size: 14px
+      @extend %translucent-style
+      margin: 8px 0
+      color: $white
+    input#coupon, input#points, input#no-discount
+      font-size: large
+  .alert
+    display: inline-block
+    i 
+      font-size: 25px
+      margin: 0 10px
+    .fa-check
+      color: $yellow
+    .fa-times
+      color: red
+  .points-input
+    margin-left: 103px
+    span 
+      color: $yellow
+

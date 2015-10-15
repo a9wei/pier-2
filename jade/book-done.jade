@@ -1,0 +1,100 @@
+doctype html
+html(lang='zh-tw')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 映捌玖駁二電影院
+    link(rel='shortcut icon', type='image/x-icon', href='../assets/images/favicon.ico')
+    // google-font
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans|Black+Ops+One')
+    // font-awesome
+    link(rel='stylesheet', href='../assets/css/font-awesome.min.css')
+    // fancy-box
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox.css', media='screen')
+    link(rel='stylesheet', href='../assets/css/fancybox/jquery.fancybox-buttons.css')
+    link(rel='stylesheet', href='../assets/css/pages/book-done.css')
+    script(src='../assets/js/jquery-1.11.0.min.js')
+    script(src='../assets/js/jquery-migrate-1.2.1.min.js')
+    // fancy-box
+    script(src='../assets/js/fancybox/jquery.fancybox.js')
+    script(src='../assets/js/lightbox.js')
+    script(src='../assets/js/all.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-63285262-1', 'auto');
+      ga('send', 'pageview');
+  body
+    #root
+      include ./particle/_header
+      .container.section-padding.booking-width.clearfix
+        form.is-center(method='post', action='')
+          .book-info
+            .book-step
+              ul
+                li.step-one 選擇電影及場次
+                li.step-next.done 選擇座位
+                li.step-next.done 選擇票種
+                li.step-next.done 選擇付款方式
+                li.step-next.done 確認訂單
+                li.step-done.active 完成購票
+            .receipt
+              h1.title-underline 感謝您的訂購
+              .receipt-group
+                table.receipt-table
+                  thead
+                    tr.receipt-title
+                      th(colspan='3') 本次訂單資訊如下：
+                  tbody
+                    tr
+                      td(colspan='3')
+                        .info-left
+                          p
+                            | 訂單編號：PED1234567890 
+                            br
+                            | 訂購日期：2015 - 12 - 12
+                        .info-right.bar-code
+                    tr
+                      td(colspan='3') 電影：標題標題標題標題標題標題標題題標題題標題
+                    tr
+                      td 放映日期：10月10日
+                      td.separated-td 場次：15 : 20 - 2廳
+                      td 訂購張數：2張
+                    tr
+                      td(colspan='3') 座位：【8排21號】，【8排23號】
+                    tr
+                      td(colspan='3') 票種：全票  $ 360  Ｘ  1,  獨享票餐  $360  X  1
+                    tr
+                      td.content-info(colspan='3')
+                        | 總計金額：720元 
+                        br
+                        | 紅利點數：72點，目前紅利累計點數：572點 
+                        br
+                        | 儲值加點編號：SDF1234567890，儲值金額：500元 
+                        br
+                        | 剩餘儲值點數：280元
+                    tr
+                      td.content-info.receipt-notes(colspan='3')
+                        p 注意事項：
+                        ol
+                          li 確認訂票後若要退票須至現場辦理。
+                          li 退票僅限將金額退回至會員卡的儲值點數中。
+                          li 請於開演前，攜帶訂單編號或確認單至網路取票櫃檯取票，逾時未取票者恕不退票。
+                          li 凡購買優惠票券者，須於取票時出示相關身分證明文件，若無出示則須進行補票。
+                          li 本影城有權拒絕無相關證件人士入場，並不會進行退／換票或任何賠償，敬請合作。
+                          li ID卡會員網路訂票享有點數累積，訂票完成後由系統直接積點，唯無法線上用點數折抵。
+                          li 網路訂票手續費每張$20元，ID卡會員手續費不列入點數累積。
+                          li
+                            span 訂單完成後，系統將發送確認信至您的信箱，請列印此頁或抄下訂單編號。
+              // receipt-group
+          // book-info
+          input.round-corner-button.border-type-btn.btn-margin(type='button', onclick="javascript:location.href='book-movie.html'", value='繼續購票')
+          input.round-corner-button.border-type-btn.btn-margin(type='button', value='列印本頁')
+          input.round-corner-button.border-type-btn.btn-margin(type='button', onclick="javascript:location.href='index.html'", value='回首頁')
+      #root_footer
+    // root
+    include ./particle/_light-box
+    include ./particle/_footer

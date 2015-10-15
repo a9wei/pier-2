@@ -1,0 +1,82 @@
+@import "base/_all"
+@import "components/_buttons"
+@import "layout/_main"
+
+.book-info
+	width: 100%
+	border: 3px solid $yellow
+
+.book-step
+	height: 50px
+	border-bottom: 3px solid $yellow
+	ul
+		li 
+			width: 16.6%
+			display: inline-block
+			float: left
+			font-size: 16px
+			line-height: 50px
+			text-align: center
+	.active, .done
+		background: $yellow
+		color: $black
+	.step-one
+		color: $black
+	.step-one, .step-next, .step-done
+		background: url(../../images/step-one.png) no-repeat
+		width: 189px
+		height: 50px
+	.step-next
+		background: url(../../images/step-before-next.png) no-repeat
+	.step-next.active, .step-next.done
+		background: url(../../images/step-next.png) no-repeat
+	.step-done
+		background: url(../../images/step-before-done.png) no-repeat
+	.step-done.active
+		background: url(../../images/step-done.png) no-repeat
+
+.receipt
+	padding: 50px 240px
+
+.receipt-group
+	margin: 25px auto
+	padding: 15px
+	background: #eee
+	color: $black
+	.receipt-table
+		width: 100%
+		line-height: 25px
+		tr td 
+			height: 40px
+			padding: 0 5px
+			border-bottom: 1px solid #BABABA
+		.receipt-title
+			font-size: 16px
+			line-height: 40px
+			border-bottom: 1px solid #BABABA
+			th 
+				text-align: center
+		.info-left
+			float: left
+			margin: 10px 0
+		.info-right
+			float: right
+			margin: 10px 0
+		.bar-code
+			background: url(http://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/UPC-A-036000291452.png/220px-UPC-A-036000291452.png)
+			width: 220px
+			height: 50px
+			background-position-y: -50px
+		.separated-td
+			border: 1px solid #BABABA
+		.content-info
+			padding: 10px 5px
+		.content-info.receipt-notes
+			border-bottom: none
+			padding-bottom: 30px
+			span 
+				color: red
+
+
+
+

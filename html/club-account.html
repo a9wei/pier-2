@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>映捌玖駁二電影院</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <!-- google-font-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Black+Ops+One">
+    <!-- font-awesome-->
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <!-- fancy-box-->
+    <link rel="stylesheet" href="../assets/css/fancybox/jquery.fancybox.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/fancybox/jquery.fancybox-buttons.css">
+    <link rel="stylesheet" href="../assets/css/tab.css">
+    <link rel="stylesheet" href="../assets/css/pages/club-account.css">
+    <link rel="stylesheet" href="../assets/css/responsive-table.css">
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <!-- fancy-box-->
+    <script src="../assets/js/fancybox/jquery.fancybox.js"></script>
+    <script src="../assets/js/lightbox.js"></script>
+    <script src="../assets/js/all.js"></script>
+    <!-- tab's-->
+    <script src="../assets/js/prefixfree.min.js"></script>
+    <script src="../assets/js/tab.js"></script>
+    <script src="../assets/js/account-list.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-63285262-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <nav class="navbar-color navbar-fixed-top">
+          <div class="container">
+            <div class="top-btn-group">
+              <form action="" method="get" class="input-group search-input">
+                <input type="text" placeholder="搜尋" required="required" class="input-box">
+                <input type="submit" value="" class="search-submit-btn">
+              </form>
+              <div class="search-area"><a href="#">
+                  <div class="circle-btn search-btn"></div></a>
+                <div id="mobile-search" class="search-box">
+                  <form action="" method="get" accept-charset="utf-8">
+                    <input type="text" placeholder="搜尋" required="required" class="mobile-search-input">
+                    <input type="submit" value="" class="search-submit-btn">
+                  </form>
+                </div>
+              </div>
+              <!-- search-area--><a href="#" class="language-transfer">
+                <div class="circle-btn yellow-btn transfer-btn">EN</div>
+                <div style="display: none" class="circle-btn yellow-btn transfer-btn">中</div></a><a href="#inline1" class="fancybox">
+                <div class="circle-btn login-btn"></div>
+                <!-- 登入後加 active, 並開啟下方的login-hello--></a>
+              <p style="display: none" class="login-hello">Welcome, 千瑋</p>
+            </div>
+            <!-- top-btn-group-->
+            <div class="nav-header">
+              <button type="button" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand-logo"><img src="../assets/images/logo-s.png" alt="映捌玖駁二電影院" title="映捌玖駁二電影院"></a>
+              <ul id="mobile-menu" class="navbar is-center collapse">
+                <li><a href="showing-movie.html" class="white-link">現正熱映</a></li>
+                <li><a href="coming-soon.html" class="white-link">近期上映</a></li>
+                <li><a href="news.html" class="white-link">藝文資訊</a></li>
+                <li><a href="about.html" class="white-link">電影院介紹</a></li>
+                <li class="home-logo"><a href="index.html" class="logo"><img src="../assets/images/pier-2-logo.png" alt="映捌玖駁二電影院"></a></li>
+                <li><a href="club.html" class="white-link">影迷俱樂部</a></li>
+                <li><a href="book-online.html" class="white-link">線上訂票</a></li>
+                <li><a href="news.html" class="white-link">捌玖特報</a></li>
+                <li><a href="fun-corner.html" class="white-link">影藏角落</a></li>
+              </ul>
+            </div>
+            <!-- nav-header-->
+          </div>
+          <!-- container-->
+        </nav>
+      </header>
+      <!-- header-->
+      <div class="full-width is-center">
+        <article class="inside-pages">
+          <!-- inside-pages-main-->
+          <section class="inside-pages-tab club-form">
+            <div class="tabs">
+              <nav role="navigation" class="transformer-tabs clearfix">
+                <ul> 
+                  <li><a href="#tab-1" class="active"><i class="fa fa-pencil"></i>編輯個人檔案</a></li>
+                  <li><a href="#tab-2"><i class="fa fa-minus"></i>購票記錄查詢</a></li>
+                  <li><a href="#tab-3"><i class="fa fa-plus"></i>儲值記錄查詢</a></li>
+                  <li><a href="#tab-4"><i class="fa fa-gift"></i>兌換記錄查詢</a></li>
+                </ul>
+              </nav>
+              <div id="tab-1" class="active clearfix">
+                <h2 class="is-yellow">親愛的＿＿＿會員您好，歡迎登入！<br>提醒您，你的會員卡期限至：2016-12-02日止。</h2>
+                <form method="post" action="" class="application-group">
+                  <div class="form-item">
+                    <label for="phone"><span class="is-yellow">＊</span>電話</label>
+                    <input id="phone" type="tel" name="phone" value="02-23315077" required="required">
+                  </div>
+                  <div class="form-item">
+                    <label for="mobile-phone"><span class="is-yellow">＊</span>手機</label>
+                    <input id="mobile-phone" type="tel" name="mobile-phone" value="0912-345678" required="required">
+                  </div>
+                  <div class="form-item">
+                    <label for="usermail"><span class="is-yellow">＊</span>電子郵件</label>
+                    <input id="usermail" type="email" name="usermail" value="test@gmail.com" required="required">
+                  </div>
+                  <div class="form-item clearfix">
+                    <label>居住地址</label>
+                    <div class="select-style address-select"> 
+                      <select name="" class="is-white">
+                        <option value="">台北市 </option>
+                        <option value="">新北市 </option>
+                        <option value="">桃源市</option>
+                      </select>
+                    </div>
+                    <div class="select-style address-select"> 
+                      <select name="" class="is-white">
+                        <option value="">中正區 </option>
+                        <option value="">中山區 </option>
+                        <option value="">松山區</option>
+                      </select>
+                    </div>
+                    <input id="address" type="text" name="address" value="">
+                  </div>
+                  <div class="form-checkbox clearfix">
+                    <p>電影偏好</p>
+                    <div class="film-type-group">
+                      <input id="film-type-a" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-a">喜劇片</label>
+                    </div>
+                    <div class="film-type-group">
+                      <input id="film-type-b" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-b">科幻片</label>
+                    </div>
+                    <div class="film-type-group">
+                      <input id="film-type-c" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-c">文藝片</label>
+                    </div>
+                    <div class="film-type-group">
+                      <input id="film-type-d" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-d">戰爭片</label>
+                    </div>
+                    <div class="film-type-group">
+                      <input id="film-type-e" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-e">劇情片</label>
+                    </div>
+                    <div class="film-type-group">
+                      <input id="film-type-f" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-f">情慾片</label>
+                    </div>
+                    <div class="film-type-group">
+                      <input id="film-type-g" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-g">藝術片</label>
+                    </div>
+                    <div class="film-type-group">
+                      <input id="film-type-h" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-h">驚悚片</label>
+                    </div>
+                    <div class="film-type-group">
+                      <input id="film-type-i" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-i">歌舞片</label>
+                    </div>
+                    <div class="film-type-group">
+                      <input id="film-type-j" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-j">記錄片</label>
+                    </div>
+                    <div class="film-type-group">
+                      <input id="film-type-k" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-k">動畫片</label>
+                    </div>
+                    <div class="film-type-group">
+                      <input id="film-type-l" type="checkbox" name="" value="" class="checkbox">
+                      <label for="film-type-l">恐怖片</label>
+                    </div>
+                  </div>
+                  <input type="submit" value="確認送出" class="round-corner-button">
+                </form>
+              </div>
+              <!-- tab-1 -->
+              <div id="tab-2" class="tab-table clearfix">
+                <div class="tab-top clearfix">
+                  <div class="user-info">
+                    <p>儲值金額：1590元<span>｜</span>目前累計紅利：1110點</p>
+                    <p>紅利失效年度：2016-1-31（1150點）</p>
+                  </div>
+                  <div class="search-time">
+                    <div class="select-style">
+                      <select name="" class="is-white">
+                        <option value="">2015年6月</option>
+                        <option value="">2015年5月</option>
+                        <option value="">2015年4月</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-area">
+                  <table class="form-table order-record">
+                    <caption>查詢記錄區間：2015年4月</caption>
+                    <thead>
+                      <tr>
+                        <th class="transaction-date">交易時間</th>
+                        <th class="transaction-code">交易編號</th>
+                        <th class="film-title">電影名稱</th>
+                        <th class="screening">播放場次</th>
+                        <th class="qty">票數</th>
+                        <th class="price">金額</th>
+                        <th class="payment-method">通路</th>
+                        <th class="state">狀態</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="record-list">
+                        <td class="transaction-date">2015-12-12</td>
+                        <td class="transaction-code">HM201512120123</td>
+                        <td class="film-title">鴿子在樹上陳屍</td>
+                        <td class="screening">2015-12-12(22:20)</td>
+                        <td class="qty">2</td>
+                        <td class="price">$540</td>
+                        <td class="payment-method">網路</td>
+                        <td class="state">正常</td>
+                      </tr>
+                      <tr class="record-detail">
+                        <td colspan="9" class="detail-type">
+                          <div class="table-info">
+                            <h2>記錄明細</h2>訂單編號：HM201512120123<span>｜</span>交易時間：2015-12-12 12:34 <br>付款方式：儲值卡扣點<span>｜</span>儲值方式：現金<span>｜</span>儲值金額：500元
+                          </div>
+                          <!-- table-info-->
+                          <button class="news-close-btn"></button>
+                          <table class="responsive-table">
+                            <thead>
+                              <tr>
+                                <th scope="col" class="number">序號</th>
+                                <th scope="col" class="type">類型</th>
+                                <th scope="col" class="product-items">商品名稱</th>
+                                <th scope="col" class="hall">廳別</th>
+                                <th scope="col" class="screening">場次</th>
+                                <th scope="col" class="seat">座位</th>
+                                <th scope="col" class="payment">付款狀態</th>
+                                <th scope="col" class="tickets">票（編號）</th>
+                                <th scope="col" class="qty">數量</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td data-title="類型">票(單)</td>
+                                <td data-title="商品名稱">海綿寶寶：海陸大出擊（中文版）</td>
+                                <td data-title="廳別">八廳</td>
+                                <td data-title="場次">2015-12-12(22:20)</td>
+                                <td data-title="座位">A排5號</td>
+                                <td data-title="付款狀態">退款</td>
+                                <td data-title="票（編號）">全票(03579344)</td>
+                                <td data-title="數量">1</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td data-title="類型">餐(套)</td>
+                                <td data-title="商品名稱">50元會員套餐</td>
+                                <td data-title="廳別"></td>
+                                <td data-title="場次"></td>
+                                <td data-title="座位"></td>
+                                <td data-title="付款狀態">Ο</td>
+                                <td data-title="票（編號）"></td>
+                                <td data-title="數量">1</td>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">網路手續費：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">付款小計：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">退款小計：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">團體折讓：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">折扣券折讓：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">總計：540</th>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <!-- record-detail-->
+                      </tr>
+                      <tr class="record-list">
+                        <td class="transaction-date">2015-12-12</td>
+                        <td class="transaction-code">HM201512120123</td>
+                        <td class="film-title">鴿子在樹上陳屍</td>
+                        <td class="screening">2015-12-12(22:20)</td>
+                        <td class="qty">2</td>
+                        <td class="price">$540</td>
+                        <td class="payment-method">網路</td>
+                        <td class="state">正常</td>
+                      </tr>
+                      <tr class="record-detail">
+                        <td colspan="9" class="detail-type">
+                          <div class="table-info">
+                            <h2>記錄明細</h2>訂單編號：HM201512120123<span>｜</span>交易時間：2015-12-12 12:34 <br>付款方式：儲值卡扣點<span>｜</span>儲值方式：現金<span>｜</span>儲值金額：500元
+                          </div>
+                          <!-- table-info-->
+                          <button class="news-close-btn"></button>
+                          <table class="responsive-table">
+                            <thead>
+                              <tr>
+                                <th scope="col" class="number">序號</th>
+                                <th scope="col" class="type">類型</th>
+                                <th scope="col" class="product-items">商品名稱</th>
+                                <th scope="col" class="hall">廳別</th>
+                                <th scope="col" class="screening">場次</th>
+                                <th scope="col" class="seat">座位</th>
+                                <th scope="col" class="payment">付款狀態</th>
+                                <th scope="col" class="tickets">票（編號）</th>
+                                <th scope="col" class="qty">數量</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td data-title="類型">票(單)</td>
+                                <td data-title="商品名稱">海綿寶寶：海陸大出擊（中文版）</td>
+                                <td data-title="廳別">八廳</td>
+                                <td data-title="場次">2015-12-12(22:20)</td>
+                                <td data-title="座位">A排5號</td>
+                                <td data-title="付款狀態">退款</td>
+                                <td data-title="票（編號）">全票(03579344)</td>
+                                <td data-title="數量">1</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td data-title="類型">餐(套)</td>
+                                <td data-title="商品名稱">50元會員套餐</td>
+                                <td data-title="廳別"></td>
+                                <td data-title="場次"></td>
+                                <td data-title="座位"></td>
+                                <td data-title="付款狀態">Ο</td>
+                                <td data-title="票（編號）"></td>
+                                <td data-title="數量">1</td>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">網路手續費：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">付款小計：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">退款小計：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">團體折讓：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">折扣券折讓：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">總計：540</th>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <!-- record-detail-->
+                      </tr>
+                      <tr class="record-list">
+                        <td class="transaction-date">2015-12-12</td>
+                        <td class="transaction-code">HM201512120123</td>
+                        <td class="film-title">那一年，我們一起追的女孩叫什麼來著你說說</td>
+                        <td class="screening">2015-12-12(22:20)</td>
+                        <td class="qty">2</td>
+                        <td class="price">$540</td>
+                        <td class="payment-method">網路</td>
+                        <td class="state">正常</td>
+                      </tr>
+                      <tr class="record-detail">
+                        <td colspan="9" class="detail-type">
+                          <div class="table-info">
+                            <h2>記錄明細</h2>訂單編號：HM201512120123<span>｜</span>交易時間：2015-12-12 12:34 <br>付款方式：儲值卡扣點<span>｜</span>儲值方式：現金<span>｜</span>儲值金額：500元
+                          </div>
+                          <!-- table-info-->
+                          <button class="news-close-btn"></button>
+                          <table class="responsive-table">
+                            <thead>
+                              <tr>
+                                <th scope="col" class="number">序號</th>
+                                <th scope="col" class="type">類型</th>
+                                <th scope="col" class="product-items">商品名稱</th>
+                                <th scope="col" class="hall">廳別</th>
+                                <th scope="col" class="screening">場次</th>
+                                <th scope="col" class="seat">座位</th>
+                                <th scope="col" class="payment">付款狀態</th>
+                                <th scope="col" class="tickets">票（編號）</th>
+                                <th scope="col" class="qty">數量</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td data-title="類型">票(單)</td>
+                                <td data-title="商品名稱">海綿寶寶：海陸大出擊（中文版）</td>
+                                <td data-title="廳別">八廳</td>
+                                <td data-title="場次">2015-12-12(22:20)</td>
+                                <td data-title="座位">A排5號</td>
+                                <td data-title="付款狀態">退款</td>
+                                <td data-title="票（編號）">全票(03579344)</td>
+                                <td data-title="數量">1</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td data-title="類型">餐(套)</td>
+                                <td data-title="商品名稱">50元會員套餐</td>
+                                <td data-title="廳別"></td>
+                                <td data-title="場次"></td>
+                                <td data-title="座位"></td>
+                                <td data-title="付款狀態">Ο</td>
+                                <td data-title="票（編號）"></td>
+                                <td data-title="數量">1</td>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">網路手續費：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">付款小計：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">退款小計：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">團體折讓：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">折扣券折讓：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">總計：540</th>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <!-- record-detail-->
+                      </tr>
+                      <tr class="record-list">
+                        <td class="transaction-date">2015-12-12</td>
+                        <td class="transaction-code">HM201512120123</td>
+                        <td class="film-title">鴿子在樹上陳屍</td>
+                        <td class="screening">2015-12-12(22:20)</td>
+                        <td class="qty">2</td>
+                        <td class="price">$540</td>
+                        <td class="payment-method">網路</td>
+                        <td class="state">退票</td>
+                      </tr>
+                      <tr class="record-detail">
+                        <td colspan="9" class="detail-type">
+                          <div class="table-info">
+                            <h2>記錄明細</h2>訂單編號：HM201512120123<span>｜</span>交易時間：2015-12-12 12:34 <br>付款方式：儲值卡扣點<span>｜</span>儲值方式：現金<span>｜</span>儲值金額：500元
+                          </div>
+                          <!-- table-info-->
+                          <button class="news-close-btn"></button>
+                          <table class="responsive-table">
+                            <thead>
+                              <tr>
+                                <th scope="col" class="number">序號</th>
+                                <th scope="col" class="type">類型</th>
+                                <th scope="col" class="product-items">商品名稱</th>
+                                <th scope="col" class="hall">廳別</th>
+                                <th scope="col" class="screening">場次</th>
+                                <th scope="col" class="seat">座位</th>
+                                <th scope="col" class="payment">付款狀態</th>
+                                <th scope="col" class="tickets">票（編號）</th>
+                                <th scope="col" class="qty">數量</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td data-title="類型">票(單)</td>
+                                <td data-title="商品名稱">海綿寶寶：海陸大出擊（中文版）</td>
+                                <td data-title="廳別">八廳</td>
+                                <td data-title="場次">2015-12-12(22:20)</td>
+                                <td data-title="座位">A排5號</td>
+                                <td data-title="付款狀態">退款</td>
+                                <td data-title="票（編號）">全票(03579344)</td>
+                                <td data-title="數量">1</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td data-title="類型">餐(套)</td>
+                                <td data-title="商品名稱">50元會員套餐</td>
+                                <td data-title="廳別"></td>
+                                <td data-title="場次"></td>
+                                <td data-title="座位"></td>
+                                <td data-title="付款狀態">Ο</td>
+                                <td data-title="票（編號）"></td>
+                                <td data-title="數量">1</td>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">網路手續費：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">付款小計：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">退款小計：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">團體折讓：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">折扣券折讓：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">總計：540</th>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <!-- record-detail-->
+                      </tr>
+                      <tr class="record-list">
+                        <td class="transaction-date">2015-12-12</td>
+                        <td class="transaction-code">HM201512120123</td>
+                        <td class="film-title">鴿子在樹上陳屍</td>
+                        <td class="screening">2015-12-12(22:20)</td>
+                        <td class="qty">2</td>
+                        <td class="price">$540</td>
+                        <td class="payment-method">網路</td>
+                        <td class="state">正常</td>
+                      </tr>
+                      <tr class="record-detail">
+                        <td colspan="9" class="detail-type">
+                          <div class="table-info">
+                            <h2>記錄明細</h2>訂單編號：HM201512120123<span>｜</span>交易時間：2015-12-12 12:34 <br>付款方式：儲值卡扣點<span>｜</span>儲值方式：現金<span>｜</span>儲值金額：500元
+                          </div>
+                          <!-- table-info-->
+                          <button class="news-close-btn"></button>
+                          <table class="responsive-table">
+                            <thead>
+                              <tr>
+                                <th scope="col" class="number">序號</th>
+                                <th scope="col" class="type">類型</th>
+                                <th scope="col" class="product-items">商品名稱</th>
+                                <th scope="col" class="hall">廳別</th>
+                                <th scope="col" class="screening">場次</th>
+                                <th scope="col" class="seat">座位</th>
+                                <th scope="col" class="payment">付款狀態</th>
+                                <th scope="col" class="tickets">票（編號）</th>
+                                <th scope="col" class="qty">數量</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td data-title="類型">票(單)</td>
+                                <td data-title="商品名稱">海綿寶寶：海陸大出擊（中文版）</td>
+                                <td data-title="廳別">八廳</td>
+                                <td data-title="場次">2015-12-12(22:20)</td>
+                                <td data-title="座位">A排5號</td>
+                                <td data-title="付款狀態">退款</td>
+                                <td data-title="票（編號）">全票(03579344)</td>
+                                <td data-title="數量">1</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td data-title="類型">餐(套)</td>
+                                <td data-title="商品名稱">50元會員套餐</td>
+                                <td data-title="廳別"></td>
+                                <td data-title="場次"></td>
+                                <td data-title="座位"></td>
+                                <td data-title="付款狀態">Ο</td>
+                                <td data-title="票（編號）"></td>
+                                <td data-title="數量">1</td>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">網路手續費：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">付款小計：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">退款小計：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">團體折讓：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">折扣券折讓：0</th>
+                              </tr>
+                              <tr>
+                                <th colspan="9" class="align-right">總計：540</th>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- record-detail-->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- tab-2-->
+              <div id="tab-3" class="tab-table clearfix">
+                <div class="tab-top clearfix">
+                  <div class="user-info">
+                    <p>儲值金額：1590元<span>｜</span>目前累計紅利：1110點</p>
+                    <p>紅利失效年度：2016-1-31（1150點）</p>
+                  </div>
+                  <div class="search-time">
+                    <div class="select-style">
+                      <select name="" class="is-white">
+                        <option value="">2015年6月</option>
+                        <option value="">2015年5月</option>
+                        <option value="">2015年4月</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-area">
+                  <table class="form-table stored-record">
+                    <caption>查詢記錄區間：2015年4月</caption>
+                    <thead>
+                      <tr>
+                        <th class="transaction-date">交易時間</th>
+                        <th class="booking-no">訂單編號</th>
+                        <th class="event">事件</th>
+                        <th class="points">點數</th>
+                        <th class="staff">操作人員</th>
+                        <th class="notes">備註</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="transaction-date">2015-12-12</td>
+                        <td class="booking-no">PP201512120123</td>
+                        <td class="event">儲值加點</td>
+                        <td class="points">500</td>
+                        <td class="staff">web</td>
+                        <td class="notes">網路刷卡加點</td>
+                      </tr>
+                      <tr>
+                        <td class="transaction-date">2015-12-01</td>
+                        <td class="booking-no">PP201512010123</td>
+                        <td class="event">消費扣點</td>
+                        <td class="points">-290</td>
+                        <td class="staff">an</td>
+                        <td class="notes"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="teb-notes">
+                  <h3>儲值卡信託說明</h3>
+                  <ol>
+                    <li>本儲值卡信託存續期間之計算係自標的儲值卡發行日起算十二個月（所稱之發行係儲值卡最後一次儲值日為發行日），即儲值卡最後一次儲值日起，該儲值卡之所有餘額之信託期間均為十二個月。</li>
+                    <li>信託專戶係發行人為保障消費者權益，自願以委託人名義將消費者支付之部分或全部預收款價金（以下稱「預收款」）交付信託予受託銀行，此類信託之受益人原則上為委託人而非消費者，消費者無權逕向受託銀行處分或請求返還信託財產，惟當該委託人發生解散、重整、撤銷登記或破產等事由，致無法履行交付商品或提供服務義務時，本行始依信託契約約定，召開受益權人會議分配信託財產予消費者或依法為其他處理。</li>
+                    <li>申請人同意個人資料提供予受託銀行，並於儲值卡預收款費用信託相關之特定目的範圍內得為蒐集、處理及利用，但受託銀行應負保密之責任。</li>
+                    <li>本受託銀行為永豐商業銀行。</li>
+                  </ol>
+                </div>
+              </div>
+              <!-- tab-3-->
+              <div id="tab-4" class="tab-table clearfix">
+                <div class="tab-top clearfix">
+                  <div class="user-info">
+                    <p>儲值金額：1590元<span>｜</span>目前累計紅利：1110點</p>
+                    <p>紅利失效年度：2016-1-31（1150點）</p>
+                  </div>
+                  <div class="search-time">
+                    <div class="select-style">
+                      <select name="" class="is-white">
+                        <option value="">2015年</option>
+                        <option value="">2015年</option>
+                        <option value="">2015年</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-area">
+                  <table class="form-table birthday-present-record">
+                    <caption>生日禮兌換記錄</caption>
+                    <thead>
+                      <tr>
+                        <th class="redeem-date">兌換日期</th>
+                        <th class="product-name">商品名稱</th>
+                        <th class="redeem-qty">兌換數量</th>
+                        <th class="state">狀態</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="redeem-date">2015-12-12</td>
+                        <td class="product-name">電影通關券</td>
+                        <td class="redeem-qty">1</td>
+                        <td class="state">已兌換</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- tab-4-->
+            </div>
+          </section>
+        </article>
+      </div>
+      <div id="root_footer"></div>
+    </div>
+    <!-- root-->
+    <div class="light-box-inline">
+      <div id="inline1" style="display: none;" class="light-box clearfix">
+        <h1 class="title-underline">立即登入</h1>
+        <form action="post">
+          <div class="input-area">
+            <input id="user" type="text" name="user" placeholder="帳號：身分証字號，開頭字母大寫" required="required" class="light-box-input login-icon">
+            <input id="password" type="password" name="password" placeholder="密碼" required="required" class="light-box-input password-icon">
+            <div class="light-box-note clearfix"><a href="#inline2" class="fancybox light-box-note-left">忘記密碼？</a>
+              <!-- 開啟忘記密碼的light-box--><a href="club-in-card.html" class="light-box-note-right">加入會員有什麼好處？</a>
+            </div>
+          </div>
+          <!-- input-area-->
+          <input type="button" onclick="javascript:location.href='#inline4'" value="登入" class="round-corner-button black-type-btn btn-margin">
+          <input type="button" onclick="javascript:location.href='club-join.html'" value="還沒有帳號嗎？" class="round-corner-button btn-margin"><br><a href="#inline4" class="fancybox">choose</a>
+        </form>
+      </div>
+      <!-- inline1-->
+      <div id="inline2" style="display: none;" class="light-box clearfix">
+        <h1 class="title-underline">忘記密碼</h1>
+        <h2>請輸入您的email信箱，我們將協助您重新設定密碼。</h2>
+        <form action="post">
+          <div class="input-area">
+            <input type="email" name="email" placeholder="您的email" required="required" class="light-box-input mail-icon">
+            <div class="captcha-img"></div>
+            <input id="captcha" type="text" name="captcha" placeholder="字母不分大小寫" required="required" class="light-box-input captcha">
+          </div>
+          <!-- input-area-->
+          <input type="button" onclick="" value="送出" class="round-corner-button black-type-btn btn-margin">
+        </form><a href="#inline3" class="fancybox">sent mail</a>
+      </div>
+      <!-- inline2-->
+      <div id="inline3" style="display: none;" class="light-box clearfix">
+        <h1 class="title-underline">認證信寄送</h1>
+        <h2>我們已將認證信件寄至您的信箱。<br>                請前往收取並完成後續操作，謝謝您。</h2>
+      </div>
+      <!-- inline3-->
+      <div id="inline4" style="display: none;" class="light-box clearfix">
+        <h1 class="title-underline">選擇您本次購票使用的身份</h1>
+        <h2>使用年票身份購票，單次購買最多可再加購２張會員票，每筆訂單６張為上限。<br>                使用會員身份購票，單次購買最多２張會員票，每筆訂單６張為上限。</h2>
+        <input type="button" onclick="" value="會員資格" class="round-corner-button black-type-btn btn-margin">
+        <input type="button" onclick="" value="年票資格" class="round-corner-button black-type-btn btn-margin">
+      </div>
+      <!-- inline4-->
+    </div>
+    <footer id="footer" class="clearfix">
+      <div class="column-3 theater-info"><img src="../assets/images/footer-logo.png" alt="映捌玖駁二電影院logo" class="footer-logo">
+        <div>
+          <p><i class="fa fa-phone"></i>(02)2331-5077 #208</p>
+          <p><i class="fa fa-map-marker"></i>高雄市鹽埕區駁二藝術特區 C1/C2</p>
+          <p>Copyright © 2015 in89 PIER-2 Cinema.</p>
+        </div>
+      </div>
+      <div class="column-3 is-center">
+        <ul>
+          <li><a href="privacy.html" class="white-link">隱私權政策</a></li>
+          <li><a href="about-in-group.html" class="white-link">關於in89</a></li>
+          <li><a href="faq.html" class="white-link">FAQ及客服</a></li>
+          <li><a href="http://www.104.com.tw/" target="_blink" class="white-link">工作機會</a></li>
+          <li><a href="about-group-booking.html" class="white-link">團購包場</a></li>
+          <li><a href="cooperation.html" class="white-link">異業合作</a></li>
+        </ul>
+      </div>
+      <div class="column-3">
+        <form method="post" action="" class="input-group epaper-input">
+          <input type="email" name="email" placeholder="請輸入您的 Email" required="required" class="input-box mail-icon">
+          <input type="submit" value="訂閱電子報" class="input-submit-btn">
+        </form>
+        <div class="social-media-logo-group"><a href="https://www.facebook.com/in89PIER2" target="_blink">
+            <div class="circle-btn yellow-btn fb-logo"><i class="fa fa-facebook"></i></div></a><a href="#" target="_blink">
+            <div class="circle-btn yellow-btn youtube-logo"><i class="fa fa-youtube"></i></div></a><a href="#" target="_blink">
+            <div class="circle-btn yellow-btn instagram-logo"><i class="fa fa-instagram"></i></div></a><a href="mailto:pier2@in89.com.tw">
+            <div class="circle-btn yellow-btn mail-logo"><i class="fa fa-envelope-o"></i></div></a></div>
+      </div>
+      <div class="clear"></div>
+    </footer>
+    <!-- footer-->
+  </body>
+</html>

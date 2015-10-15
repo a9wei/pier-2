@@ -1,0 +1,23 @@
+{
+  "name": "pier-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-changed": "^1.2.1",
+    "gulp-jade": "^1.0.1",
+    "merge-stream": "^0.1.8"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.7.6",
+    "gulp": "^3.8.11",
+    "gulp-compass": "^2.1.0",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-util": "^3.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
